@@ -1,0 +1,1192 @@
+.profile-section {
+  position: relative;
+}
+
+.profile-section .profile-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.profile-root-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  min-height: calc(100vh - 90px);
+}
+
+.profile-root-div .profile-root-row {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  min-height: inherit;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.profile-root-div .profile-root-row .left-side-div {
+  position: relative;
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 370px;
+          flex: 0 0 370px;
+  max-width: 370px;
+  min-height: inherit;
+  background-color: #101010;
+}
+
+.profile-root-div .profile-root-row .left-side-div .left-side-inner {
+  padding: 65px 0 35px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 45px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.profile-root-div .profile-root-row .right-side-div {
+  position: relative;
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% - 370px);
+          flex: 0 0 calc(100% - 370px);
+  max-width: calc(100% - 370px);
+  min-height: inherit;
+  background-color: #0e0e0e;
+}
+
+.vertical-tabs-header {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.vertical-tabs-header .vertical-nav-tabs {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.vertical-tabs-header .vertical-nav-tabs .nav-item {
+  position: relative;
+}
+
+.vertical-tabs-header .vertical-nav-tabs .nav-link {
+  padding: 10px 30px 10px 36px;
+  min-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  font-weight: 500;
+  font-size: 20px;
+  color: #838383;
+  letter-spacing: -0.4px;
+  -webkit-transition: all 0.8;
+  transition: all 0.8;
+}
+
+.vertical-tabs-header .vertical-nav-tabs .nav-link .bg-custom-icon {
+  -webkit-transition: all 0.8;
+  transition: all 0.8;
+}
+
+.vertical-tabs-header .vertical-nav-tabs .nav-link::before {
+  content: "";
+  height: 100%;
+  width: 6px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  -webkit-transition: all 0.8;
+  transition: all 0.8;
+}
+
+.vertical-tabs-header .vertical-nav-tabs .nav-link:hover {
+  color: #fff;
+}
+
+.vertical-tabs-header .vertical-nav-tabs .nav-link:hover::before {
+  background-color: #00dbd2;
+}
+
+.vertical-tabs-header .vertical-nav-tabs .nav-link:hover .home-active-icon {
+  background-image: url("../images/icons/custom/home-active-icon.png");
+}
+
+.vertical-tabs-header .vertical-nav-tabs .nav-link:hover .billing-active-icon {
+  background-image: url("../images/icons/custom/billing-tab-active-icon.png");
+}
+
+.vertical-tabs-header .vertical-nav-tabs .nav-link:hover .credit-tab-active-icon {
+  background-image: url("../images/icons/custom/credit--tab-active-icon.png");
+}
+
+.vertical-tabs-header .vertical-nav-tabs .nav-link.active, .vertical-tabs-header .vertical-nav-tabs .nav-link.show {
+  color: #fff;
+  font-weight: 700;
+}
+
+.vertical-tabs-header .vertical-nav-tabs .nav-link.active::before, .vertical-tabs-header .vertical-nav-tabs .nav-link.show::before {
+  background-color: #00dbd2;
+}
+
+.vertical-tabs-header .vertical-nav-tabs .nav-link .center-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.vertical-tabs-header .vertical-nav-tabs .nav-link .center-txt .icon-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 34px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 20px 0 0;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner {
+  padding: 65px 35px 35px 70px;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .heading-div h1 {
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.4;
+  color: #fff;
+  letter-spacing: -0.9px;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .profile-row-tab-custom {
+  padding: 10px 0;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .profile-row-tab-custom .normal-custom-header-top {
+  padding: 0;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .profile-row-tab-custom .normal-custom-header-top .normal-custom-heading-box {
+  width: 100%;
+  position: relative;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .profile-row-tab-custom .normal-custom-header-top .normal-custom-heading-box h3 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: -0.6px;
+  margin: 0 0 20px 0;
+  display: block;
+  width: 100%;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .profile-row-tab-custom .normal-custom-header-top .normal-custom-heading-box .custom-heading-h2 {
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #04d1c5;
+  border-color: transparent transparent #04d1c5 transparent;
+  letter-spacing: 1.65px;
+  padding: 10px 0;
+  min-width: 120px;
+  text-align: left;
+  position: relative;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .profile-row-tab-custom .normal-custom-header-top .normal-custom-heading-box .custom-heading-h2::before {
+  border-bottom: 3px solid;
+  content: "";
+  width: 100%;
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .profile-row-tab-custom .normal-custom-header-top .normal-custom-heading-box .custom-heading-h2 .icon-center {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 5px 0;
+  min-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .profile-row-tab-custom .general-card-form-root {
+  padding: 10px 0;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .profile-row-tab-custom .general-card-form-root .btn-group-div .btn-group-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px 0 15px 0;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .profile-row-tab-custom .general-card-form-root .btn-group-div .btn-group-row .btn-common-primary-big {
+  min-width: 300px;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .profile-row-tab-custom .general-card-form-root .btn-group-div .btn-group-row .mr-25 {
+  margin-right: 25px;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .profile-row-tab-custom .form-group {
+  margin-bottom: 1.25rem;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box {
+  margin: 0 0 10px 0;
+  max-width: 515px;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .btn-book-link-area {
+  display: block;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner {
+  padding: 20px 65px 20px 20px;
+  background-color: #191919;
+  border: 1px solid #191919;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner h3 {
+  font-size: 24px;
+  color: inherit;
+  letter-spacing: 1.08px;
+  font-weight: 700;
+  line-height: 1.4;
+  display: block;
+  margin: 0 0 10px 0;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  color: inherit;
+  letter-spacing: 0.9px;
+  margin: 0 0 10px 0;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.4;
+  color: inherit;
+  letter-spacing: 0.58px;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .arrow-right-span {
+  position: absolute;
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .arrow-right-side-icon {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .arrow-check-round {
+  position: absolute;
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 36px;
+  width: 36px;
+  border-radius: 36px;
+  background-color: #191919;
+  border: 2px solid #48d1c5;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .arrow-check-round .round-box {
+  height: 26px;
+  width: 26px;
+  border-radius: 26px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .arrow-check-round .round-box::before {
+  content: "";
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .btn-credit-round {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4px 15px;
+  background: #121212;
+  border: 1px solid #04d1c5;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #04d1c5;
+  line-height: 1.5;
+  letter-spacing: 0;
+  min-height: 40px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .btn-credit-round .span-icon {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 0 10px;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .btn-credit-round:hover, .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .btn-credit-round:focus {
+  -webkit-box-shadow: 0 0 10px 0 rgba(4, 209, 195, 0.3);
+          box-shadow: 0 0 10px 0 rgba(4, 209, 195, 0.3);
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .col-first {
+  min-width: 120px;
+  padding: 0 15px 0 0;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .col-desc {
+  width: calc(100% - 150px);
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box.active .book-button-card-inner {
+  background-color: #04d1c5;
+  color: #121212;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box.active .book-button-card-inner .arrow-right-side-icon {
+  background-image: url(../images/icons/custom/arrow-right-side-black-icon.png);
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box.active .book-button-card-inner .arrow-check-round {
+  background-color: #191919;
+  border: 2px solid #191919;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box.active .book-button-card-inner .arrow-check-round .round-box {
+  height: 26px;
+  width: 26px;
+  border-radius: 26px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box:hover .book-button-card-inner {
+  background-color: #04d1c5;
+  color: #121212;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box:hover .book-button-card-inner .arrow-right-side-icon {
+  background-image: url(../images/icons/custom/arrow-right-side-black-icon.png);
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 0 0 15px 0;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row .plan-left {
+  width: calc(100% - 120px);
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row .plan-right {
+  width: 120px;
+  padding: 0 0 0 10px;
+  text-align: right;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #00e0d8;
+  letter-spacing: 0.9px;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  letter-spacing: 0.72px;
+  text-align: right;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row .button-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row .btn-credit-round {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4px 15px;
+  background: #121212;
+  border: 1px solid #04d1c5;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #04d1c5;
+  line-height: 1.5;
+  letter-spacing: 0;
+  min-height: 40px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row .btn-credit-round .span-icon {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px 0 0;
+}
+
+.vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row .btn-credit-round:hover, .vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row .btn-credit-round:focus {
+  -webkit-box-shadow: 0 0 10px 0 rgba(4, 209, 195, 0.3);
+          box-shadow: 0 0 10px 0 rgba(4, 209, 195, 0.3);
+}
+
+.add-credits-view-root {
+  padding: 15px 0 0 0;
+}
+
+.add-credits-view-root .credits-left-info-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.add-credits-view-root .credits-left-info-div .credits-left-info-top {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.add-credits-view-root .credits-left-info-div .credits-left-info-top h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: -0.48px;
+  text-align: right;
+  line-height: 1.3;
+  width: 100%;
+}
+
+.add-credits-view-root .credits-left-info-div .credits-left-info-top h4 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: -0.4px;
+  text-align: right;
+  line-height: 1.3;
+}
+
+.add-credits-view-root .credits-left-info-div .credits-left-info-text-box {
+  padding: 0;
+  margin: 0;
+}
+
+.add-credits-view-root .credits-left-info-div .credits-left-info-text-box .cl-info-row {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #04d1c5;
+}
+
+.add-credits-view-root .credits-left-info-div .credits-left-info-text-box .cl-info-row h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 0.72px;
+  text-align: right;
+  margin: 0 0 5px 0;
+}
+
+.add-credits-view-root .credits-left-info-div .credits-left-info-text-box .cl-info-row h2 .number-big {
+  font-size: 22px;
+  color: #00dbd2;
+  letter-spacing: 1px;
+  margin: 0 0 0 20px;
+}
+
+.add-credits-view-root .credits-left-info-div .credits-left-info-text-box .cl-info-row h2 .text-span {
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.add-credits-view-root .credits-left-info-div .credits-left-info-text-box .cl-info-desc-row {
+  padding: 8px 0 5px 0;
+  margin: 0;
+}
+
+.add-credits-view-root .credits-left-info-div .credits-left-info-text-box .cl-info-desc-row p {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #f8f8f8;
+  letter-spacing: -0.31px;
+  text-align: right;
+}
+
+.add-credits-view-root .credits-left-info-div .credits-left-info-text-box .cl-info-desc-row p .link {
+  color: #00dbd2;
+  font-weight: 700;
+  text-decoration: underline;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.add-credits-view-root .credits-left-info-div .credits-left-info-text-box .cl-info-desc-row p .link:hover {
+  color: #f8f8f8;
+}
+
+.add-credits-view-root .credits-center-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.add-credits-view-root .credits-center-div .credits-center-inner {
+  padding: 0;
+  margin: 0;
+}
+
+.add-credits-view-root .credits-center-div .credits-center-inner .credits-plan-si {
+  padding: 0;
+  margin: 0 0 25px 0;
+  position: relative;
+  color: #7b7b7b;
+}
+
+.add-credits-view-root .credits-center-div .credits-center-inner .credits-plan-si h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  color: inherit;
+  letter-spacing: 1.7px;
+  margin: 0 0 8px 0;
+}
+
+.add-credits-view-root .credits-center-div .credits-center-inner .credits-plan-si .btn-text-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.add-credits-view-root .credits-center-div .credits-center-inner .credits-plan-si .btn-text-row h5 {
+  font-weight: 500;
+  font-size: 20px;
+  color: inherit;
+  letter-spacing: 0;
+  margin: 0 0 0 10px;
+}
+
+.add-credits-view-root .credits-center-div .credits-center-inner .credits-plan-si.active {
+  color: #fff;
+}
+
+.add-credits-view-root .credits-center-div .credits-center-inner .credits-plan-si.active .btn.btn-credit-general {
+  color: #111;
+  background: #04d1c5;
+  border-color: #04d1c5;
+}
+
+.add-credits-view-root .credits-center-div .credits-center-inner .credits-plan-si.active .btn.btn-credit-general .credit-icon-active {
+  background-image: url(../images/icons/custom/credit-icon.png);
+}
+
+.add-credits-view-root .account-card-root-div .account-card-box {
+  margin: 0 0 25px 0;
+}
+
+.add-credits-view-root .account-card-root-div h4 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: -0.4px;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+}
+
+.add-credits-view-root .account-card-root-div h4 .font-bold {
+  font-weight: 700;
+}
+
+.add-credits-view-root .account-card-root-div .btn-group-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+.add-credits-view-root .account-card-root-div .btn-group-div .btn-common-primary-big {
+  font-size: 20px;
+  color: #121212;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  min-width: 300px;
+}
+
+.add-credits-view-root .account-card-root-div .desc-div p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #999;
+  letter-spacing: 0.59px;
+}
+
+.add-credits-view-root .account-card-root-div .desc-div p .link {
+  color: inherit;
+  text-decoration: underline;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.add-credits-view-root .account-card-root-div .desc-div p .link:hover {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .profile-root-div {
+    min-height: auto;
+  }
+  .profile-root-div .profile-root-row {
+    min-height: auto;
+  }
+  .profile-root-div .profile-root-row .left-side-div {
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    min-height: auto;
+  }
+  .profile-root-div .profile-root-row .left-side-div .left-side-inner {
+    padding: 30px 0 25px 0;
+  }
+  .profile-root-div .profile-root-row .right-side-div {
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    min-height: auto;
+  }
+  .vertical-tabs-header .vertical-nav-tabs .nav-link {
+    padding: 8px 20px 8px 24px;
+    min-height: 44px;
+    font-size: 16px;
+  }
+  .vertical-tabs-header .vertical-nav-tabs .nav-link::before {
+    width: 4px;
+  }
+  .vertical-tabs-header .vertical-nav-tabs .nav-link .bg-custom-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .vertical-tabs-header .vertical-nav-tabs .nav-link .center-txt .icon-center {
+    width: 30px;
+    margin: 0 10px 0 0;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner {
+    padding: 25px 20px 15px 20px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .heading-div h1 {
+    margin: 0 0 20px 0;
+    font-size: 30px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .profile-row-tab-custom .normal-custom-header-top .normal-custom-heading-box h3 {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .profile-row-tab-custom .normal-custom-header-top .normal-custom-heading-box .custom-heading-h2 {
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 1.25px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .profile-row-tab-custom .general-card-form-root .btn-group-div .btn-group-row .btn-common-primary-big {
+    min-width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner {
+    margin: 0 0 20px 0;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner {
+    padding: 15px 45px 15px 15px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .arrow-right-span {
+    right: 15px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .arrow-right-span .bg-custom-icon {
+    width: 20px;
+    height: 15px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .arrow-check-round {
+    right: 10px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .btn-credit-round {
+    padding: 4px 10px;
+    font-size: 14px;
+    min-height: 30px;
+    line-height: 1.2;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .btn-credit-round .span-icon {
+    height: 24px;
+    margin: 0 0 0 7px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .btn-credit-round .bg-custom-icon {
+    width: 14px;
+    height: 20px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner p {
+    font-size: 9px;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .col-first {
+    min-width: 90px;
+    padding: 0 10px 0 0;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .col-desc {
+    width: calc(100% - 100px);
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row {
+    margin: 0 0 8px 0;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row .plan-right {
+    width: 90px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row .plan-left {
+    width: calc(100% - 90px);
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row h4 {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row h5 {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.22px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row .btn-credit-round {
+    padding: 4px 10px;
+    font-size: 14px;
+    min-height: 30px;
+    line-height: 1.2;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row .btn-credit-round .span-icon {
+    height: 24px;
+    margin: 0 7px 0 0;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row .btn-credit-round .bg-custom-icon {
+    width: 14px;
+    height: 20px;
+  }
+  .add-credits-view-root {
+    margin: 0 0 40px 0;
+  }
+  .add-credits-view-root .credits-left-info-div {
+    margin: 0 0 40px 0;
+  }
+  .add-credits-view-root .credits-left-info-div .credits-left-info-top h3 {
+    font-size: 20px;
+    margin: 0 0 1px 0;
+    text-align: left;
+  }
+  .add-credits-view-root .credits-left-info-div .credits-left-info-top h4 {
+    font-size: 16px;
+    text-align: left;
+  }
+  .add-credits-view-root .credits-left-info-div .credits-left-info-text-box .cl-info-row h2 {
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .add-credits-view-root .credits-left-info-div .credits-left-info-text-box .cl-info-row h2 .number-big {
+    font-size: 20px;
+    margin: 0 0 0 10px;
+  }
+  .add-credits-view-root .credits-left-info-div .credits-left-info-text-box .cl-info-desc-row p {
+    font-size: 12px;
+    text-align: left;
+  }
+  .add-credits-view-root .credits-center-div {
+    margin: 0 0 20px 0;
+  }
+  .add-credits-view-root .credits-center-div .credits-center-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .add-credits-view-root .credits-center-div .credits-center-inner .credits-plan-si {
+    padding: 5px;
+    margin: 0 0 20px 0;
+    width: 50%;
+  }
+  .add-credits-view-root .credits-center-div .credits-center-inner .credits-plan-si h4 {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    margin: 0 0 8px 0;
+  }
+  .add-credits-view-root .credits-center-div .credits-center-inner .credits-plan-si .btn-text-row h5 {
+    font-size: 18px;
+    margin: 0 0 0 8px;
+  }
+  .add-credits-view-root .account-card-root-div h4 {
+    font-size: 16px;
+    margin: 0 0 15px 0;
+  }
+  .add-credits-view-root .account-card-root-div .btn-group-div .btn-group-row {
+    width: 100%;
+  }
+  .add-credits-view-root .account-card-root-div .btn-group-div .btn-common-primary-big {
+    letter-spacing: 0.5px;
+    min-width: 100%;
+    font-size: 14px;
+    min-height: 42px;
+  }
+  .add-credits-view-root .account-card-root-div .desc-div p {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .profile-root-div {
+    min-height: auto;
+  }
+  .profile-root-div .profile-root-row {
+    min-height: auto;
+  }
+  .profile-root-div .profile-root-row .left-side-div {
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    min-height: auto;
+  }
+  .profile-root-div .profile-root-row .left-side-div .left-side-inner {
+    padding: 30px 0 25px 0;
+  }
+  .profile-root-div .profile-root-row .right-side-div {
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    min-height: auto;
+  }
+  .vertical-tabs-header .vertical-nav-tabs .nav-link {
+    padding: 8px 20px 8px 24px;
+    min-height: 44px;
+    font-size: 16px;
+  }
+  .vertical-tabs-header .vertical-nav-tabs .nav-link::before {
+    width: 4px;
+  }
+  .vertical-tabs-header .vertical-nav-tabs .nav-link .bg-custom-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .vertical-tabs-header .vertical-nav-tabs .nav-link .center-txt .icon-center {
+    width: 30px;
+    margin: 0 10px 0 0;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner {
+    padding: 25px 20px 15px 20px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .heading-div h1 {
+    margin: 0 0 20px 0;
+    font-size: 30px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .profile-row-tab-custom .normal-custom-header-top .normal-custom-heading-box h3 {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .profile-row-tab-custom .normal-custom-header-top .normal-custom-heading-box .custom-heading-h2 {
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 1.25px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .profile-row-tab-custom .general-card-form-root .btn-group-div .btn-group-row .mr-25 {
+    margin-right: 15px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner {
+    margin: 0 0 20px 0;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner {
+    padding: 15px 45px 15px 15px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .arrow-right-span {
+    right: 15px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .arrow-right-span .bg-custom-icon {
+    width: 20px;
+    height: 15px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .arrow-check-round {
+    right: 10px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .btn-credit-round {
+    padding: 4px 10px;
+    font-size: 14px;
+    min-height: 30px;
+    line-height: 1.2;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .btn-credit-round .span-icon {
+    height: 24px;
+    margin: 0 0 0 7px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .btn-credit-round .bg-custom-icon {
+    width: 14px;
+    height: 20px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner p {
+    font-size: 9px;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .col-first {
+    min-width: 90px;
+    padding: 0 10px 0 0;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .account-credit-card-root-inner .book-button-card-box .book-button-card-inner .col-desc {
+    width: calc(100% - 100px);
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row {
+    margin: 0 0 8px 0;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row .plan-right {
+    width: 90px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row .plan-left {
+    width: calc(100% - 90px);
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row h4 {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row h5 {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.22px;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row .btn-credit-round {
+    padding: 4px 10px;
+    font-size: 14px;
+    min-height: 30px;
+    line-height: 1.2;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row .btn-credit-round .span-icon {
+    height: 24px;
+    margin: 0 7px 0 0;
+  }
+  .vertical-tab-content .vertical-tab-pane-inner .plan-credits-root-div .plan-details-text-div .plan-details-row .btn-credit-round .bg-custom-icon {
+    width: 14px;
+    height: 20px;
+  }
+  .add-credits-view-root .credits-left-info-div .credits-left-info-top h3 {
+    font-size: 20px;
+  }
+  .add-credits-view-root .credits-left-info-div .credits-left-info-top h4 {
+    font-size: 16px;
+  }
+  .add-credits-view-root .credits-left-info-div .credits-left-info-text-box .cl-info-row h2 {
+    font-size: 14px;
+    letter-spacing: 0.4px;
+  }
+  .add-credits-view-root .credits-left-info-div .credits-left-info-text-box .cl-info-row h2 .number-big {
+    font-size: 20px;
+    margin: 0 0 0 10px;
+  }
+  .add-credits-view-root .credits-left-info-div .credits-left-info-text-box .cl-info-desc-row p {
+    font-size: 12px;
+  }
+  .add-credits-view-root .credits-center-div .credits-center-inner .credits-plan-si h4 {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    margin: 0 0 8px 0;
+  }
+  .add-credits-view-root .credits-center-div .credits-center-inner .credits-plan-si .btn-text-row h5 {
+    font-size: 18px;
+    margin: 0 0 0 8px;
+  }
+  .add-credits-view-root .account-card-root-div h4 {
+    font-size: 16px;
+    margin: 0 0 15px 0;
+  }
+  .add-credits-view-root .account-card-root-div .btn-group-div .btn-common-primary-big {
+    letter-spacing: 0.5px;
+    min-width: 150px;
+    font-size: 14px;
+    min-height: 42px;
+  }
+  .add-credits-view-root .account-card-root-div .desc-div p {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+}
+/*# sourceMappingURL=profile-style.css.map */

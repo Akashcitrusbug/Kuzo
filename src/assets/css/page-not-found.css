@@ -1,0 +1,108 @@
+.page-not-found-section {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background: url("../images/cloud.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-not-found-section .page-not-found-div {
+  margin: 0;
+  padding: 80px 15px;
+  text-align: center;
+  background-color: #1e1e1e;
+}
+
+.page-not-found-section .page-not-found-div .page-not-thumb {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page-not-found-section .page-not-found-div .page-not-thumb img {
+  margin: 0 auto;
+}
+
+.page-not-found-section .page-not-found-div .page-not-thumb h1 {
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 90px;
+  color: #00e7e2;
+  letter-spacing: 10px;
+  text-align: center;
+  display: block;
+  margin: 0 0 5px 0;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.page-not-found-section .page-not-found-div .page-not-content {
+  margin: 20px auto 0 auto;
+  padding: 0;
+  max-width: 685px;
+}
+
+.page-not-found-section .page-not-found-div .page-not-content h3 {
+  padding: 0;
+  margin: 0 0 30px 0;
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.5;
+  color: #fff;
+  letter-spacing: -0.8px;
+  text-align: center;
+}
+
+.page-not-found-section .page-not-found-div .page-not-content p {
+  font-weight: 300;
+  font-size: 22px;
+  color: #fff;
+  letter-spacing: -0.52px;
+  text-align: center;
+  line-height: 1.5;
+  display: block;
+  margin: 0 0 20px 0;
+}
+
+.page-not-found-section .page-not-found-div .page-not-content .button-common-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0 0 0;
+}
+
+@media (max-width: 767px) {
+  .page-not-found-section .page-not-found-div {
+    max-width: 350px;
+  }
+  .page-not-found-section .page-not-found-div .page-not-thumb h1 {
+    font-size: 90px;
+    line-height: 64px;
+  }
+  .page-not-found-section .page-not-found-div .page-not-content h3 {
+    margin: 0 0 15px 0;
+    font-size: 32px;
+  }
+  .page-not-found-section .page-not-found-div .page-not-content p {
+    font-size: 16px;
+  }
+  .page-not-found-section .page-not-found-div .page-not-content .button-common-div {
+    padding: 10px 0 0 0;
+  }
+}
+/*# sourceMappingURL=page-not-found.css.map */

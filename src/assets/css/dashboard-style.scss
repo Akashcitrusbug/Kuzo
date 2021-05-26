@@ -1,0 +1,295 @@
+.dashboard-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  .dashboard-div {
+    padding: 50px 0 50px 0;
+    margin: 0;
+    position: relative;
+  }
+}
+
+.icons-collapsible-card-root {
+  padding: 30px 0 30px 0;
+  margin: 0;
+  position: relative;
+
+  .heading-div {
+    padding: 0;
+    margin: 0 auto 50px auto;
+    position: relative;
+
+    h3 {
+      padding: 0;
+      margin: 0 0 15px 0;
+      display: block;
+      width: 100%;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 1.5;
+      color: #fff;
+      letter-spacing: -0.7px;
+    }
+
+    p {
+      padding: 0;
+      margin: 0 0 10px 0;
+      font-weight: 500;
+      font-size: 18px;
+      color: #7d7d7d;
+      line-height: 1.5;
+      letter-spacing: 0.36px;
+      display: block;
+    }
+  }
+
+  .inner-collapsible-icons {
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+    .button-center-div {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0 0 0 0;
+      padding: 0 0 50px 0;
+    }
+
+    .collapsible-button-div {
+      padding: 0;
+      margin: 0;
+      position: relative;
+
+      .collapsible-button-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &::before {
+          content: "";
+          height: 2px;
+          background: #303030;
+          width: 100%;
+          position: absolute;
+          left: 0;
+        }
+      }
+
+      .btn.btn-default-collapse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 20px;
+        font-weight: 500;
+        font-size: 18px;
+        color: #00dcd2;
+        letter-spacing: -0.36px;
+        outline: none;
+        box-shadow: none;
+        transition: all 0.8s;
+        text-decoration: none;
+        background-color: #121212;
+        z-index: 9;
+        position: relative;
+
+        .down-arrow-icon {
+          transform: rotate(180deg);
+          margin: 0 0 0 10px;
+          transition: all 0.8s;
+        }
+
+        .show-text {
+          display: none;
+        }
+
+        .close-text {
+          display: inline-block;
+        }
+
+        &.collapsed {
+          .down-arrow-icon {
+            transform: rotate(0deg);
+            transition: all 0.8s;
+          }
+
+          .show-text {
+            display: inline-block;
+            transition: all 0.8s;
+          }
+
+          .close-text {
+            display: none;
+            transition: all 0.8s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.filter-category-root-div {
+  padding: 0;
+  margin: 0 0 60px 0;
+  position: relative;
+
+  .filter-category-inner {
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+    .filter-list-ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      list-style: none;
+
+      li {
+        padding: 0;
+        margin: 0 10px 10px 0;
+        position: relative;
+
+        .filter-link {
+          margin: 0;
+          position: relative;
+          background: #1b1b1b;
+          border: 1px solid #5d5d5d;
+          border-radius: 6px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          color: #fff;
+          letter-spacing: 2.4px;
+          min-height: 50px;
+          padding: 6px 30px 5px 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.8s;
+        }
+
+        &.active {
+          .filter-link {
+            color: #111315;
+            background: #04d1c5;
+            border: 1px solid #04d1c5;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .dashboard-section {
+    .dashboard-div {
+      padding: 30px 0 30px 0;
+    }
+  }
+
+  .icons-collapsible-card-root {
+    .heading-div {
+      h3 {
+        font-size: 24px;
+        margin: 0 0 10px 0;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.4;
+      }
+    }
+
+    .inner-collapsible-icons {
+      .collapsible-button-div {
+        .btn.btn-default-collapse {
+          padding: 5px 15px;
+          font-size: 16px;
+          letter-spacing: 0;
+
+          .down-arrow-icon {
+            height: 6px;
+            width: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .filter-category-root-div {
+    margin: 0 0 40px 0;
+
+    .filter-category-inner {
+      .filter-list-ul {
+        li {
+          .filter-link {
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 1.5px;
+            min-height: 40px;
+            padding: 6px 15px 5px 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .dashboard-section {
+    .dashboard-div {
+      padding: 30px 0 30px 0;
+    }
+  }
+
+  .icons-collapsible-card-root {
+    .heading-div {
+      h3 {
+        font-size: 24px;
+        margin: 0 0 10px 0;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.4;
+      }
+    }
+
+    .inner-collapsible-icons {
+      .collapsible-button-div {
+        .btn.btn-default-collapse {
+          padding: 5px 15px;
+          font-size: 16px;
+          letter-spacing: 0;
+
+          .down-arrow-icon {
+            height: 6px;
+            width: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .filter-category-root-div {
+    margin: 0 0 40px 0;
+    
+    .filter-category-inner {
+      .filter-list-ul {
+        li {
+          .filter-link {
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 1.5px;
+            min-height: 40px;
+            padding: 6px 15px 5px 15px;
+          }
+        }
+      }
+    }
+  }
+}

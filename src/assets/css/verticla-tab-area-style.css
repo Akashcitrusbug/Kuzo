@@ -1,0 +1,249 @@
+.tf-root-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  min-height: calc(100vh - 90px);
+}
+
+.tf-root-div .tf-root-row {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  min-height: inherit;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tf-root-div .tf-root-row .left-side-div {
+  position: relative;
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 370px;
+          flex: 0 0 370px;
+  max-width: 370px;
+  min-height: inherit;
+  background-color: #101010;
+}
+
+.tf-root-div .tf-root-row .left-side-div .left-side-inner {
+  padding: 65px 0 35px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 45px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.tf-root-div .tf-root-row .right-side-div {
+  position: relative;
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% - 370px);
+          flex: 0 0 calc(100% - 370px);
+  max-width: calc(100% - 370px);
+  min-height: inherit;
+  background-color: #0e0e0e;
+}
+
+.tf-vertical-tabs-header {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.tf-vertical-tabs-header .vertical-nav-tabs {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.tf-vertical-tabs-header .vertical-nav-tabs .nav-item {
+  position: relative;
+}
+
+.tf-vertical-tabs-header .vertical-nav-tabs .nav-link {
+  padding: 10px 30px 10px 36px;
+  min-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  font-weight: 500;
+  font-size: 20px;
+  color: #838383;
+  letter-spacing: -0.4px;
+  -webkit-transition: all 0.8;
+  transition: all 0.8;
+}
+
+.tf-vertical-tabs-header .vertical-nav-tabs .nav-link .bg-custom-icon {
+  -webkit-transition: all 0.8;
+  transition: all 0.8;
+}
+
+.tf-vertical-tabs-header .vertical-nav-tabs .nav-link::before {
+  content: "";
+  height: 100%;
+  width: 6px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  -webkit-transition: all 0.8;
+  transition: all 0.8;
+}
+
+.tf-vertical-tabs-header .vertical-nav-tabs .nav-link:hover {
+  color: #fff;
+}
+
+.tf-vertical-tabs-header .vertical-nav-tabs .nav-link:hover::before {
+  background-color: #00dbd2;
+}
+
+.tf-vertical-tabs-header .vertical-nav-tabs .nav-link:hover .home-active-icon {
+  background-image: url("../images/icons/custom/home-active-icon.png");
+}
+
+.tf-vertical-tabs-header .vertical-nav-tabs .nav-link:hover .billing-active-icon {
+  background-image: url("../images/icons/custom/billing-tab-active-icon.png");
+}
+
+.tf-vertical-tabs-header .vertical-nav-tabs .nav-link:hover .credit-tab-active-icon {
+  background-image: url("../images/icons/custom/credit--tab-active-icon.png");
+}
+
+.tf-vertical-tabs-header .vertical-nav-tabs .nav-link.active, .tf-vertical-tabs-header .vertical-nav-tabs .nav-link.show {
+  color: #fff;
+  font-weight: 700;
+}
+
+.tf-vertical-tabs-header .vertical-nav-tabs .nav-link.active::before, .tf-vertical-tabs-header .vertical-nav-tabs .nav-link.show::before {
+  background-color: #00dbd2;
+}
+
+.tf-vertical-tabs-header .vertical-nav-tabs .nav-link .center-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.tf-vertical-tabs-header .vertical-nav-tabs .nav-link .center-txt .icon-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 34px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 20px 0 0;
+}
+
+@media (max-width: 767px) {
+  .tf-root-div {
+    min-height: auto;
+  }
+  .tf-root-div .tf-root-row {
+    min-height: auto;
+  }
+  .tf-root-div .tf-root-row .left-side-div {
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    min-height: auto;
+  }
+  .tf-root-div .tf-root-row .left-side-div .left-side-inner {
+    padding: 30px 0 25px 0;
+  }
+  .tf-root-div .tf-root-row .right-side-div {
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    min-height: auto;
+  }
+  .tf-vertical-tabs-header .vertical-nav-tabs .nav-link {
+    padding: 8px 20px 8px 24px;
+    min-height: 44px;
+    font-size: 16px;
+  }
+  .tf-vertical-tabs-header .vertical-nav-tabs .nav-link::before {
+    width: 4px;
+  }
+  .tf-vertical-tabs-header .vertical-nav-tabs .nav-link .bg-custom-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .tf-vertical-tabs-header .vertical-nav-tabs .nav-link .center-txt .icon-center {
+    width: 30px;
+    margin: 0 10px 0 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .tf-root-div {
+    min-height: auto;
+  }
+  .tf-root-div .tf-root-row {
+    min-height: auto;
+  }
+  .tf-root-div .tf-root-row .left-side-div {
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    min-height: auto;
+  }
+  .tf-root-div .tf-root-row .left-side-div .left-side-inner {
+    padding: 30px 0 25px 0;
+  }
+  .tf-root-div .tf-root-row .right-side-div {
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    min-height: auto;
+  }
+  .tf-vertical-tabs-header .vertical-nav-tabs .nav-link {
+    padding: 8px 20px 8px 24px;
+    min-height: 44px;
+    font-size: 16px;
+  }
+  .tf-vertical-tabs-header .vertical-nav-tabs .nav-link::before {
+    width: 4px;
+  }
+  .tf-vertical-tabs-header .vertical-nav-tabs .nav-link .bg-custom-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .tf-vertical-tabs-header .vertical-nav-tabs .nav-link .center-txt .icon-center {
+    width: 30px;
+    margin: 0 10px 0 0;
+  }
+}
+/*# sourceMappingURL=verticla-tab-area-style.css.map */

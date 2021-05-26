@@ -1,0 +1,223 @@
+.menu-icon {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23fff' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-menu white-color'%3E%3Cline x1='3' y1='12' x2='21' y2='12'%3E%3C/line%3E%3Cline x1='3' y1='6' x2='21' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='18' x2='21' y2='18'%3E%3C/line%3E%3C/svg%3E");
+}
+
+.menu-icon-hover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23131727' stroke='%23131727' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-menu white-color'%3E%3Cline x1='3' y1='12' x2='21' y2='12'%3E%3C/line%3E%3Cline x1='3' y1='6' x2='21' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='18' x2='21' y2='18'%3E%3C/line%3E%3C/svg%3E");
+}
+
+@mixin menu-icon {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23fff' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-menu white-color'%3E%3Cline x1='3' y1='12' x2='21' y2='12'%3E%3C/line%3E%3Cline x1='3' y1='6' x2='21' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='18' x2='21' y2='18'%3E%3C/line%3E%3C/svg%3E");
+}
+
+@mixin menu-black-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23131727' stroke='%23131727' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-menu white-color'%3E%3Cline x1='3' y1='12' x2='21' y2='12'%3E%3C/line%3E%3Cline x1='3' y1='6' x2='21' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='18' x2='21' y2='18'%3E%3C/line%3E%3C/svg%3E");
+}
+
+/* BG ICON */
+.bg-custom-icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.search-icon {
+  width: 21px;
+  height: 21px;
+  background-image: url("../images/icons/custom/search-icon.png");
+}
+
+.left-arrow-round {
+  width: 35px;
+  height: 35px;
+  background-image: url("../images/icons/custom/left-arrow.png");
+}
+
+.right-arrow-round {
+  width: 35px;
+  height: 35px;
+  background-image: url("../images/icons/custom/right-arrow.png");
+}
+
+.stopwatch-icon {
+  width: 17px;
+  height: 17px;
+  background-image: url("../images/icons/custom/stopwatch-icon.png");
+}
+
+.price-tag-icon {
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/icons/custom/price-tag-icons.png");
+}
+
+.category-icon {
+  width: 13px;
+  height: 13px;
+  background-image: url("../images/icons/custom/category-icon.png");
+}
+
+.credit-icon {
+  width: 18px;
+  height: 25px;
+  background-image: url("../images/icons/custom/credit-icon.png");
+}
+
+.credit-icon-active {
+  width: 18px;
+  height: 25px;
+  background-image: url("../images/icons/custom/credit-icon-active.png");
+}
+
+.calendar-icon {
+  width: 19px;
+  height: 19px;
+  background-image: url("../images/icons/custom/calendar-icon.png");
+}
+
+.calendar-icon-white {
+  width: 17px;
+  height: 18px;
+  background-image: url("../images/icons/custom/calendar-white-icon.png");
+}
+
+.spot-alert-icon {
+  width: 14px;
+  height: 21px;
+  background-image: url("../images/icons/custom/spot-alert-icon.png");
+}
+
+.arrow-right-side-icon {
+  width: 30px;
+  height: 25px;
+  background-image: url("../images/icons/custom/arrow-right-side-icon.png");
+}
+
+.arrow-right-side-black-icon {
+  width: 30px;
+  height: 25px;
+  background-image: url("../images/icons/custom/arrow-right-side-black-icon.png");
+}
+
+.credit-card-icon {
+  width: 27px;
+  height: 18px;
+  background-image: url("../images/icons/custom/credit-card-icon.png");
+}
+
+.down-arrow-icon {
+  width: 12px;
+  height: 8px;
+  background-image: url("../images/icons/custom/down-arrow-icon.png");
+}
+
+.down-white-arrow-icon {
+  width: 16px;
+  height: 10px;
+  background-image: url("../images/icons/custom/down-white-arrow-icon.png");
+}
+
+.home-active-icon {
+  width: 34px;
+  height: 34px;
+  background-image: url("../images/icons/custom/home-tab-inactive-icon.png");
+}
+
+.billing-active-icon {
+  width: 29px;
+  height: 28px;
+  background-image: url("../images/icons/custom/billing-tab-inactive-icon.png");
+}
+
+.credit-tab-active-icon {
+  width: 20px;
+  height: 28px;
+  background-image: url("../images/icons/custom/credit-tab-inactive-icon.png");
+}
+
+.lock-icon {
+  width: 22px;
+  height: 22px;
+  background-image: url("../images/icons/custom/lock-icon.png");
+  background-position: center;
+}
+
+.password-icon-default {
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/icons/custom/password.png");
+  background-position: center;
+}
+
+.cancel-icon {
+  width: 18px;
+  height: 18px;
+  background-image: url("../images/icons/custom/cancel-icon.png");
+  background-position: center;
+}
+
+.class-preferences-icon {
+  width: 29px;
+  height: 21px;
+  background-image: url("../images/icons/custom/class-preferences-inactive-icon.png");
+  background-position: center;
+}
+
+.check-box-icon {
+  width: 26px;
+  height: 26px;
+  background-image: url("../images/icons/custom/done-black.svg");
+  background-position: center;
+}
+
+.play-video-icon {
+  width: 18px;
+  height: 18px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='34px' height='42px' viewBox='0 0 34 42' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EPath%3C/title%3E%3Cg id='icons' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M32.3771484,22.5856178 L3.21054688,41.3356178 C2.86875,41.5572975 2.47402344,41.6672584 2.08339844,41.6672584 C1.74160156,41.6672584 1.39570313,41.5817115 1.08652344,41.4129615 C0.415039062,41.0467506 0,40.3467506 0,39.58386 L0,2.08385999 C0,1.32096936 0.415039062,0.620969362 1.08652344,0.254758425 C1.74570312,-0.10735095 2.57167969,-0.0850853251 3.21054687,0.332102175 L32.3771484,19.0821022 C32.9712891,19.464524 33.3333984,20.1258522 33.3333984,20.83386 C33.3333984,21.5418678 32.9712891,22.2030006 32.3771484,22.5856178 Z' id='Path' fill='%2304D1C5'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  background-position: center;
+}
+
+.active,
+.show {
+  .stopwatch-icon {
+    background-image: url("../images/icons/custom/stopwatch-icon-active.png");
+  }
+
+  .price-tag-icon {
+    background-image: url("../images/icons/custom/price-tag-icons-active.png");
+  }
+
+  .category-icon {
+    background-image: url("../images/icons/custom/category-icon-active.png");
+  }
+
+  .home-active-icon {
+    background-image: url("../images/icons/custom/home-active-icon.png");
+  }
+  
+  .billing-active-icon {
+    background-image: url("../images/icons/custom/billing-tab-active-icon.png");
+  }
+  
+  .credit-tab-active-icon {
+    background-image: url("../images/icons/custom/credit--tab-active-icon.png");
+  }
+
+  .class-preferences-icon {
+    background-image: url("../images/icons/custom/class-preferences-active-icon.png");
+  }
+
+  .password-icon-default {
+    background-image: url("../images/icons/custom/password-active.png");
+  }
+}

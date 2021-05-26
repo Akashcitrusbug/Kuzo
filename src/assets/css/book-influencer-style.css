@@ -1,0 +1,668 @@
+.book-influencer-main-area {
+  padding: 70px 0;
+}
+
+.book-influencer-section .heading-div {
+  padding: 0;
+  margin: 0 auto 25px auto;
+  position: relative;
+}
+
+.book-influencer-section .heading-div h3 {
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #fff;
+  letter-spacing: -0.44px;
+  text-align: left;
+}
+
+.book-influencer-section .heading-div h3 .countdown-text {
+  color: #00dcd2;
+}
+
+.book-influencer-section .dark-card-about {
+  background: #202020;
+  padding: 30px 50px 20px 50px;
+  margin: 0 0 40px 0;
+}
+
+.book-influencer-section .dark-card-about .dark-card-info-header {
+  margin: 0 0 25px 0;
+}
+
+.book-influencer-section .dark-card-about .dark-card-info-header h3 {
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #04d1c5;
+  letter-spacing: -0.36px;
+  display: block;
+}
+
+.book-influencer-section .dark-card-about .icons-card-info-box {
+  padding: 0;
+  margin: 0 0 20px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.book-influencer-section .dark-card-about .icons-card-info-box .icons-card-info-box-left {
+  width: 40%;
+}
+
+.book-influencer-section .dark-card-about .icons-card-info-box .icons-card-info-box-right {
+  width: 60%;
+  padding: 0 0 0 20px;
+}
+
+.book-influencer-section .dark-card-about .icons-card-info-box .img-thumb {
+  padding: 0;
+  margin: 0 0 15px 0;
+  display: block;
+}
+
+.book-influencer-section .dark-card-about .icons-card-info-box .img-thumb .img-responsive {
+  height: 70px;
+  width: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.book-influencer-section .dark-card-about .icons-card-info-box .desc-content-div {
+  padding: 0;
+  margin: 0 0 10px 0;
+  display: block;
+}
+
+.book-influencer-section .dark-card-about .icons-card-info-box .desc-content-div h4 {
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: -0.36px;
+  display: block;
+  width: 100%;
+}
+
+.book-influencer-section .dark-card-about .icons-card-info-box .desc-content-div h4 a {
+  color: inherit;
+}
+
+.book-influencer-section .dark-card-about .icons-card-info-box .desc-content-div p {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: -0.32px;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.book-influencer-section .dark-card-about .icons-card-info-box .desc-content-div .font-w500 {
+  font-weight: 500;
+}
+
+.book-influencer-section .dark-card-agenda {
+  background: #202020;
+  padding: 30px 50px 20px 50px;
+  margin: 0 0 40px 0;
+}
+
+.book-influencer-section .dark-card-agenda .dark-card-info-header {
+  margin: 0 0 25px 0;
+}
+
+.book-influencer-section .dark-card-agenda .dark-card-info-header h3 {
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #04d1c5;
+  letter-spacing: -0.36px;
+  display: block;
+}
+
+.book-influencer-section .dark-card-agenda .icons-card-info-box {
+  padding: 0;
+  margin: 0 0 10px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.book-influencer-section .dark-card-agenda .icons-card-info-box .desc-content-div-row {
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: block;
+  width: 100%;
+}
+
+.book-influencer-section .dark-card-agenda .icons-card-info-box .desc-content-div-row h4 {
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: -0.36px;
+  display: block;
+  width: 100%;
+}
+
+.book-influencer-section .dark-card-agenda .icons-card-info-box .desc-content-div-row h4 a {
+  color: inherit;
+}
+
+.book-influencer-section .dark-card-agenda .icons-card-info-box .desc-content-div-row p {
+  font-size: 16px;
+  color: #767676;
+  font-weight: 500;
+  letter-spacing: -0.32px;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.book-influencer-section .dark-card-agenda .icons-card-info-box .desc-content-div-row .font-w500 {
+  font-weight: 500;
+}
+
+.book-account-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.book-account-section .book-account-div {
+  padding: 50px 0 0 55px;
+  margin: 0;
+  position: relative;
+}
+
+.book-account-section .heading-div {
+  padding: 0;
+  margin: 0 auto 15px auto;
+  position: relative;
+}
+
+.book-account-section .heading-div h3 {
+  padding: 0;
+  margin: 0 0 10px 0;
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1.5;
+  color: #fff;
+  letter-spacing: -0.7px;
+}
+
+.book-account-section .tabs-root-custom .tabs-header .nav-tabs {
+  width: 100%;
+}
+
+.book-account-section .tabs-root-custom .tabs-header .nav-tabs .nav-item {
+  width: 50%;
+}
+
+.book-account-section .general-card-form-root {
+  padding: 12px 0 0 0;
+}
+
+.book-account-section .book-tab-common-root {
+  padding: 20px 0;
+  margin: 0;
+  position: relative;
+}
+
+.book-account-section .book-tab-common-root .book-buttons-root {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.book-account-section .book-tab-common-root .book-buttons-root .button-div {
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: block;
+}
+
+.book-account-section .book-tab-common-root .book-card-root {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.book-account-section .book-tab-common-root .book-button-card-box {
+  margin: 0 0 20px 0;
+}
+
+.book-account-section .book-tab-common-root .book-button-card-box .btn-book-link-area {
+  display: block;
+}
+
+.book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner {
+  padding: 20px 60px 20px 20px;
+  background-color: transparent;
+  border: 1px solid #00d5c6;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner h3 {
+  font-size: 24px;
+  color: inherit;
+  letter-spacing: 1.08px;
+  font-weight: 700;
+  line-height: 1.4;
+  display: block;
+  margin: 0 0 10px 0;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  color: inherit;
+  letter-spacing: 0.9px;
+  margin: 0 0 10px 0;
+}
+
+.book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.4;
+  color: inherit;
+  letter-spacing: 0.58px;
+}
+
+.book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .arrow-right-span {
+  position: absolute;
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .arrow-right-side-icon {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .btn-credit-round {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4px 15px;
+  background: #121212;
+  border: 1px solid #04d1c5;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #04d1c5;
+  line-height: 1.5;
+  letter-spacing: 0;
+  min-height: 40px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .btn-credit-round .span-icon {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px 0 0;
+}
+
+.book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .btn-credit-round:hover, .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .btn-credit-round:focus {
+  -webkit-box-shadow: 0 0 10px 0 rgba(4, 209, 195, 0.3);
+          box-shadow: 0 0 10px 0 rgba(4, 209, 195, 0.3);
+}
+
+.book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .col-first {
+  min-width: 120px;
+  padding: 0 15px 0 0;
+}
+
+.book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .col-desc {
+  width: calc(100% - 150px);
+}
+
+.book-account-section .book-tab-common-root .book-button-card-box.active .book-button-card-inner {
+  background-color: #04d1c5;
+  color: #121212;
+}
+
+.book-account-section .book-tab-common-root .book-button-card-box.active .book-button-card-inner .arrow-right-side-icon {
+  background-image: url(../images/icons/custom/arrow-right-side-black-icon.png);
+}
+
+.book-account-section .book-tab-common-root .book-button-card-box:hover .book-button-card-inner {
+  background-color: #04d1c5;
+  color: #121212;
+}
+
+.book-account-section .book-tab-common-root .book-button-card-box:hover .book-button-card-inner .arrow-right-side-icon {
+  background-image: url(../images/icons/custom/arrow-right-side-black-icon.png);
+}
+
+.book-account-section .book-tab-common-root .book-credit-card-root {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.book-account-section .book-tab-common-root .book-credit-card-root-inner {
+  position: relative;
+}
+
+.book-account-section .book-tab-common-root .bottom-book-button-row {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.book-account-section .book-tab-common-root .bottom-book-button-row .back-button-div .btn.btn-back {
+  padding: 6px 30px 5px 30px;
+}
+
+.book-account-section .book-tab-common-root .bottom-book-button-row .right-button-div .btn.btn-common-small-42 {
+  padding: 6px 30px 5px 30px;
+  min-height: 42px;
+  color: #121212;
+  font-weight: 700;
+}
+
+.book-account-section .book-tab-common-root .account-card-root-div {
+  margin: 0 0 30px 0;
+}
+
+.book-account-section .book-tab-common-root .account-card-root-div .desc-div {
+  padding: 0;
+  margin: 0 0 10px 0;
+  position: relative;
+}
+
+.book-account-section .book-tab-common-root .account-card-root-div .desc-div p {
+  font-weight: 400;
+  font-size: 13px;
+  color: #fff;
+  letter-spacing: 0.58px;
+  line-height: 1.4;
+}
+
+.book-account-section .book-tab-common-root .ticket-credit-card-root .book-button-card-box .book-button-card-inner .btn-credit-round {
+  color: #fff;
+}
+
+.book-account-section .book-tab-common-root .ticket-credit-card-root .book-button-card-box .book-button-card-inner .col-desc2 p {
+  font-size: 15px;
+  line-height: 1.4;
+  letter-spacing: 0.68px;
+}
+
+@media (max-width: 767px) {
+  .book-influencer-section .heading-div h3 {
+    font-size: 18px;
+  }
+  .book-influencer-section .dark-card-about {
+    padding: 30px 20px 20px 20px;
+    margin: 0 0 30px 0;
+  }
+  .book-influencer-section .dark-card-about .icons-card-info-box {
+    margin: 0 0 10px 0;
+  }
+  .book-influencer-section .dark-card-about .icons-card-info-box .icons-card-info-box-left {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .book-influencer-section .dark-card-about .icons-card-info-box .icons-card-info-box-right {
+    width: 100%;
+    padding: 0;
+  }
+  .book-influencer-section .dark-card-about .icons-card-info-box .desc-content-div p {
+    font-size: 14px;
+  }
+  .book-influencer-section .dark-card-agenda {
+    padding: 30px 20px 20px 20px;
+    margin: 0 0 30px 0;
+  }
+  .book-influencer-section .dark-card-agenda .icons-card-info-box {
+    margin: 0 0 10px 0;
+  }
+  .book-influencer-section .dark-card-agenda .icons-card-info-box .desc-content-div-row h4 {
+    font-size: 18px;
+  }
+  .book-influencer-section .dark-card-agenda .icons-card-info-box .desc-content-div-row p {
+    font-size: 14px;
+  }
+  .book-account-section .book-account-div {
+    padding: 20px 0 0 0;
+  }
+  .book-account-section .heading-div h3 {
+    font-size: 24px;
+  }
+  .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner {
+    padding: 15px 40px 15px 15px;
+  }
+  .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .arrow-right-span {
+    right: 15px;
+  }
+  .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .arrow-right-span .bg-custom-icon {
+    width: 20px;
+    height: 15px;
+  }
+  .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+  }
+  .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .btn-credit-round {
+    padding: 4px 10px;
+    font-size: 14px;
+    min-height: 30px;
+    line-height: 1.2;
+  }
+  .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .btn-credit-round .span-icon {
+    height: 24px;
+    margin: 0 7px 0 0;
+  }
+  .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .btn-credit-round .bg-custom-icon {
+    width: 14px;
+    height: 20px;
+  }
+  .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner p {
+    font-size: 9px;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+  }
+  .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .col-first {
+    min-width: 90px;
+    padding: 0 10px 0 0;
+  }
+  .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .col-desc {
+    width: calc(100% - 100px);
+  }
+  .book-account-section .book-tab-common-root .bottom-book-button-row .back-button-div .btn.btn-back {
+    padding: 6px 20px 5px 20px;
+    font-size: 12px;
+  }
+  .book-account-section .book-tab-common-root .bottom-book-button-row .right-button-div .btn.btn-common-small-42 {
+    padding: 6px 20px 5px 20px;
+    font-size: 12px;
+  }
+  .book-account-section .book-tab-common-root .account-card-root-div .desc-div p {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+  }
+  .book-account-section .book-tab-common-root .ticket-credit-card-root .book-button-card-box .book-button-card-inner .col-desc2 p {
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .book-influencer-main-area {
+    padding: 40px 0;
+  }
+  .book-influencer-section .heading-div h3 {
+    font-size: 18px;
+  }
+  .book-influencer-section .dark-card-about {
+    padding: 30px 20px 20px 20px;
+    margin: 0 0 30px 0;
+  }
+  .book-influencer-section .dark-card-about .icons-card-info-box {
+    margin: 0 0 10px 0;
+  }
+  .book-influencer-section .dark-card-about .icons-card-info-box .icons-card-info-box-left {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .book-influencer-section .dark-card-about .icons-card-info-box .icons-card-info-box-right {
+    width: 100%;
+    padding: 0;
+  }
+  .book-influencer-section .dark-card-about .icons-card-info-box .desc-content-div p {
+    font-size: 14px;
+  }
+  .book-influencer-section .dark-card-agenda {
+    padding: 30px 20px 20px 20px;
+    margin: 0 0 30px 0;
+  }
+  .book-influencer-section .dark-card-agenda .icons-card-info-box {
+    margin: 0 0 10px 0;
+  }
+  .book-influencer-section .dark-card-agenda .icons-card-info-box .desc-content-div-row h4 {
+    font-size: 18px;
+  }
+  .book-influencer-section .dark-card-agenda .icons-card-info-box .desc-content-div-row p {
+    font-size: 14px;
+  }
+  .book-account-section .book-account-div {
+    padding: 40px 0 0 0;
+  }
+  .book-account-section .heading-div h3 {
+    font-size: 24px;
+  }
+  .book-account-section .tabs-root-custom .tabs-header .nav-tabs .nav-item .nav-link {
+    font-size: 10px;
+    padding: 10px 10px;
+    min-width: 90px;
+  }
+  .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner {
+    padding: 15px 40px 15px 15px;
+  }
+  .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .arrow-right-span {
+    right: 15px;
+  }
+  .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .arrow-right-span .bg-custom-icon {
+    width: 20px;
+    height: 15px;
+  }
+  .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+  }
+  .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .btn-credit-round {
+    padding: 4px 10px;
+    font-size: 14px;
+    min-height: 30px;
+    line-height: 1.2;
+  }
+  .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .btn-credit-round .span-icon {
+    height: 24px;
+    margin: 0 7px 0 0;
+  }
+  .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .btn-credit-round .bg-custom-icon {
+    width: 14px;
+    height: 20px;
+  }
+  .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner p {
+    font-size: 9px;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+  }
+  .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .col-first {
+    min-width: 90px;
+    padding: 0 10px 0 0;
+  }
+  .book-account-section .book-tab-common-root .book-button-card-box .book-button-card-inner .col-desc {
+    width: calc(100% - 100px);
+  }
+  .book-account-section .book-tab-common-root .bottom-book-button-row .back-button-div .btn.btn-back {
+    padding: 6px 20px 5px 20px;
+    font-size: 12px;
+  }
+  .book-account-section .book-tab-common-root .bottom-book-button-row .right-button-div .btn.btn-common-small-42 {
+    padding: 6px 20px 5px 20px;
+    font-size: 12px;
+  }
+  .book-account-section .book-tab-common-root .account-card-root-div .desc-div p {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+  }
+  .book-account-section .book-tab-common-root .ticket-credit-card-root .book-button-card-box .book-button-card-inner .col-desc2 p {
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+  }
+}
+/*# sourceMappingURL=book-influencer-style.css.map */

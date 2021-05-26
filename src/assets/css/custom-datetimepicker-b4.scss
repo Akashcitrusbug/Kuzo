@@ -1,0 +1,111 @@
+.datepicker {
+  .table-condensed > tbody > tr > td,
+  .table-condensed > tbody > tr > th,
+  .table-condensed > tfoot > tr > td,
+  .table-condensed > tfoot > tr > th,
+  .table-condensed > thead > tr > td,
+  .table-condensed > thead > tr > th {
+    padding: 5px;
+  }
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+  max-width: 100%;
+  color: #fff;
+  background: #141414;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+
+  &::after {
+    opacity: 0;
+  }
+
+  .btn-primary {
+    color: #0f0f0f;
+    background-color: #04d1c5;
+    border-color: #04d1c5;
+  }
+
+  .btn-primary:not(:disabled):not(.disabled).active:focus,
+  .btn-primary:not(:disabled):not(.disabled):active:focus,
+  .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem #04d1c5;
+  }
+
+  .btn-primary:not(:disabled):not(.disabled).active,
+  .btn-primary:not(:disabled):not(.disabled):active,
+  .show > .btn-primary.dropdown-toggle {
+    background-color: #04d1c5;
+    border-color: #04d1c5;
+  }
+
+  .timepicker.col-md-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .timepicker-picker {
+      padding: 15px 10px;
+    }
+  }
+}
+
+.date-picker-form-group {
+  .input-group.date {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .input-group-addon {
+      cursor: pointer;
+      height: 50px;
+      width: 50px;
+      background-color: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 16px 0 0;
+      z-index: 9;
+    }
+  }
+}
+
+.form-group-lock {
+  .input-group.date {
+    .input-group-addon {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .form-custom-div {
+    .form-group.date-picker-form-group {
+      .custom-form-control.form-control {
+        font-size: 16px;
+        padding: 8px 50px 7px 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .form-custom-div {
+    .form-group.date-picker-form-group {
+      .custom-form-control.form-control {
+        font-size: 16px;
+        padding: 8px 50px 7px 30px;
+      }
+    }
+  }
+
+  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
+    zoom: 90%;
+    margin-top: 10px;
+  }
+}

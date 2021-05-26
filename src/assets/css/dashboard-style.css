@@ -1,0 +1,283 @@
+.dashboard-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.dashboard-section .dashboard-div {
+  padding: 50px 0 50px 0;
+  margin: 0;
+  position: relative;
+}
+
+.icons-collapsible-card-root {
+  padding: 30px 0 30px 0;
+  margin: 0;
+  position: relative;
+}
+
+.icons-collapsible-card-root .heading-div {
+  padding: 0;
+  margin: 0 auto 50px auto;
+  position: relative;
+}
+
+.icons-collapsible-card-root .heading-div h3 {
+  padding: 0;
+  margin: 0 0 15px 0;
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1.5;
+  color: #fff;
+  letter-spacing: -0.7px;
+}
+
+.icons-collapsible-card-root .heading-div p {
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-weight: 500;
+  font-size: 18px;
+  color: #7d7d7d;
+  line-height: 1.5;
+  letter-spacing: 0.36px;
+  display: block;
+}
+
+.icons-collapsible-card-root .inner-collapsible-icons {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.icons-collapsible-card-root .inner-collapsible-icons .button-center-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 0 0;
+  padding: 0 0 50px 0;
+}
+
+.icons-collapsible-card-root .inner-collapsible-icons .collapsible-button-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.icons-collapsible-card-root .inner-collapsible-icons .collapsible-button-div .collapsible-button-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.icons-collapsible-card-root .inner-collapsible-icons .collapsible-button-div .collapsible-button-row::before {
+  content: "";
+  height: 2px;
+  background: #303030;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.icons-collapsible-card-root .inner-collapsible-icons .collapsible-button-div .btn.btn-default-collapse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 20px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #00dcd2;
+  letter-spacing: -0.36px;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  text-decoration: none;
+  background-color: #121212;
+  z-index: 9;
+  position: relative;
+}
+
+.icons-collapsible-card-root .inner-collapsible-icons .collapsible-button-div .btn.btn-default-collapse .down-arrow-icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin: 0 0 0 10px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.icons-collapsible-card-root .inner-collapsible-icons .collapsible-button-div .btn.btn-default-collapse .show-text {
+  display: none;
+}
+
+.icons-collapsible-card-root .inner-collapsible-icons .collapsible-button-div .btn.btn-default-collapse .close-text {
+  display: inline-block;
+}
+
+.icons-collapsible-card-root .inner-collapsible-icons .collapsible-button-div .btn.btn-default-collapse.collapsed .down-arrow-icon {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.icons-collapsible-card-root .inner-collapsible-icons .collapsible-button-div .btn.btn-default-collapse.collapsed .show-text {
+  display: inline-block;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.icons-collapsible-card-root .inner-collapsible-icons .collapsible-button-div .btn.btn-default-collapse.collapsed .close-text {
+  display: none;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.filter-category-root-div {
+  padding: 0;
+  margin: 0 0 60px 0;
+  position: relative;
+}
+
+.filter-category-root-div .filter-category-inner {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.filter-category-root-div .filter-category-inner .filter-list-ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  list-style: none;
+}
+
+.filter-category-root-div .filter-category-inner .filter-list-ul li {
+  padding: 0;
+  margin: 0 10px 10px 0;
+  position: relative;
+}
+
+.filter-category-root-div .filter-category-inner .filter-list-ul li .filter-link {
+  margin: 0;
+  position: relative;
+  background: #1b1b1b;
+  border: 1px solid #5d5d5d;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  letter-spacing: 2.4px;
+  min-height: 50px;
+  padding: 6px 30px 5px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.filter-category-root-div .filter-category-inner .filter-list-ul li.active .filter-link {
+  color: #111315;
+  background: #04d1c5;
+  border: 1px solid #04d1c5;
+}
+
+@media (max-width: 767px) {
+  .dashboard-section .dashboard-div {
+    padding: 30px 0 30px 0;
+  }
+  .icons-collapsible-card-root .heading-div h3 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+  }
+  .icons-collapsible-card-root .heading-div p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .icons-collapsible-card-root .inner-collapsible-icons .collapsible-button-div .btn.btn-default-collapse {
+    padding: 5px 15px;
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  .icons-collapsible-card-root .inner-collapsible-icons .collapsible-button-div .btn.btn-default-collapse .down-arrow-icon {
+    height: 6px;
+    width: 10px;
+  }
+  .filter-category-root-div {
+    margin: 0 0 40px 0;
+  }
+  .filter-category-root-div .filter-category-inner .filter-list-ul li .filter-link {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1.5px;
+    min-height: 40px;
+    padding: 6px 15px 5px 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .dashboard-section .dashboard-div {
+    padding: 30px 0 30px 0;
+  }
+  .icons-collapsible-card-root .heading-div h3 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+  }
+  .icons-collapsible-card-root .heading-div p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .icons-collapsible-card-root .inner-collapsible-icons .collapsible-button-div .btn.btn-default-collapse {
+    padding: 5px 15px;
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  .icons-collapsible-card-root .inner-collapsible-icons .collapsible-button-div .btn.btn-default-collapse .down-arrow-icon {
+    height: 6px;
+    width: 10px;
+  }
+  .filter-category-root-div {
+    margin: 0 0 40px 0;
+  }
+  .filter-category-root-div .filter-category-inner .filter-list-ul li .filter-link {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1.5px;
+    min-height: 40px;
+    padding: 6px 15px 5px 15px;
+  }
+}
+/*# sourceMappingURL=dashboard-style.css.map */

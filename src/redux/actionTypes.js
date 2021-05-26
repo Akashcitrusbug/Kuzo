@@ -1,0 +1,1 @@
+export const SET_SIGNUP_DATA = 'SET_SIGNUP_DATA';

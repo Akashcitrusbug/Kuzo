@@ -1,0 +1,595 @@
+.general-card-root {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.general-card-root .general-card-box {
+  padding: 0;
+  margin: 0 0 50px 0;
+  position: relative;
+}
+
+.general-card-root .general-card-box .top-image-thumb-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.general-card-root .general-card-box .top-image-thumb-div .btn.btn-like {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4px 15px;
+  background: #121212;
+  border: 1px solid #04d1c5;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #04d1c5;
+  line-height: 1.5;
+  letter-spacing: 0;
+  min-height: 40px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.general-card-root .general-card-box .top-image-thumb-div .btn.btn-like .span-icon {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px 0 0;
+}
+
+.general-card-root .general-card-box .top-image-thumb-div .btn.btn-like:hover, .general-card-root .general-card-box .top-image-thumb-div .btn.btn-like:focus {
+  -webkit-box-shadow: 0 0 10px 0 rgba(4, 209, 195, 0.3);
+          box-shadow: 0 0 10px 0 rgba(4, 209, 195, 0.3);
+}
+
+.general-card-root .general-card-box .top-image-thumb-div .img-thumb {
+  padding: 0;
+  margin: 0 0 20px 0;
+  position: relative;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.general-card-root .general-card-box .top-image-thumb-div .img-thumb .img-responsive {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 7px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.general-card-root .general-card-box .top-image-thumb-div .top-button-div {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+
+.general-card-root .general-card-box .content-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.general-card-root .general-card-box .content-div .content-top-row {
+  padding: 0;
+  margin: 0 0 5px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.general-card-root .general-card-box .content-div .content-top-row .left-content {
+  width: 60%;
+  display: inline-block;
+  word-break: break-word;
+}
+
+.general-card-root .general-card-box .content-div .content-top-row .right-content {
+  width: 40%;
+  display: inline-block;
+  word-break: break-word;
+}
+
+.general-card-root .general-card-box .content-div .content-top-row h3 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.4;
+  color: #fff;
+  letter-spacing: -0.44px;
+  display: block;
+  margin: 0 0 10px 0;
+  width: 100%;
+  word-break: break-word;
+}
+
+.general-card-root .general-card-box .content-div .content-top-row h3 a {
+  color: inherit;
+}
+
+.general-card-root .general-card-box .content-div .content-top-row h4 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.4;
+  color: #fff;
+  letter-spacing: -0.44px;
+  display: block;
+  margin: 0 0 5px 0;
+  width: 100%;
+  text-align: right;
+  word-break: break-word;
+}
+
+.general-card-root .general-card-box .content-div .content-top-row h4 a {
+  color: inherit;
+  word-break: break-word;
+}
+
+.general-card-root .general-card-box .content-div .content-top-row p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #04d1c5;
+  margin: 0 0 5px 0;
+  letter-spacing: -0.36px;
+  text-align: right;
+  word-break: break-word;
+}
+
+.general-card-root .general-card-box .content-div .time-box {
+  padding: 0;
+  margin: 0 0 10px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 300;
+  font-size: 18px;
+  color: #dbdbdb;
+  letter-spacing: -0.36px;
+}
+
+.general-card-root .general-card-box .content-div .time-box .icon-span {
+  margin: 0 0 0 0;
+  width: 30px;
+  padding: 0 10px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.general-card-root .general-card-box .content-div .time-box .text {
+  width: calc(100% - 30px);
+  word-break: break-word;
+}
+
+.general-card-root .general-card-box .content-div .spots-box {
+  padding: 0;
+  margin: 0 0 10px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ff3f3f;
+  letter-spacing: -0.36px;
+}
+
+.general-card-root .general-card-box .content-div .spots-box .icon-span {
+  margin: 0 0 0 0;
+  width: 30px;
+  padding: 0 10px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.general-card-root .general-card-box .content-div .spots-box .text {
+  width: calc(100% - 30px);
+  word-break: break-word;
+}
+
+.general-card-root .general-card-box:hover .top-image-thumb-div .img-thumb .img-responsive {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.general-card-root-icons {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.general-card-root-icons .general-card-box-icons {
+  padding: 0;
+  margin: 0 0 30px 0;
+  position: relative;
+}
+
+.general-card-root-icons .general-card-box-icons .general-card-inner-box {
+  background: #202020;
+}
+
+.general-card-root-icons .general-card-box-icons .top-image-thumb-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.general-card-root-icons .general-card-box-icons .top-image-thumb-div .btn.btn-like {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4px 15px;
+  background: #121212;
+  border: 1px solid #04d1c5;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #04d1c5;
+  line-height: 1.5;
+  letter-spacing: 0;
+  min-height: 40px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.general-card-root-icons .general-card-box-icons .top-image-thumb-div .btn.btn-like .span-icon {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px 0 0;
+}
+
+.general-card-root-icons .general-card-box-icons .top-image-thumb-div .btn.btn-like:hover, .general-card-root-icons .general-card-box-icons .top-image-thumb-div .btn.btn-like:focus {
+  -webkit-box-shadow: 0 0 10px 0 rgba(4, 209, 195, 0.3);
+          box-shadow: 0 0 10px 0 rgba(4, 209, 195, 0.3);
+}
+
+.general-card-root-icons .general-card-box-icons .top-image-thumb-div .img-thumb {
+  padding: 0;
+  margin: 0 0 20px 0;
+  position: relative;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.general-card-root-icons .general-card-box-icons .top-image-thumb-div .img-thumb .img-responsive {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.general-card-root-icons .general-card-box-icons .top-image-thumb-div .top-button-div {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.general-card-root-icons .general-card-box-icons .content-div {
+  padding: 0 20px 15px 20px;
+  margin: 0;
+  position: relative;
+  min-height: 155px;
+}
+
+.general-card-root-icons .general-card-box-icons .content-div .content-top-row {
+  padding: 0;
+  margin: 0 0 5px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.general-card-root-icons .general-card-box-icons .content-div .content-top-row .center-content {
+  width: 100%;
+  display: inline-block;
+  word-break: break-word;
+}
+
+.general-card-root-icons .general-card-box-icons .content-div .content-top-row h3 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.4;
+  color: #fff;
+  letter-spacing: -0.44px;
+  display: block;
+  margin: 0 0 10px 0;
+  width: 100%;
+  word-break: break-word;
+}
+
+.general-card-root-icons .general-card-box-icons .content-div .content-top-row h3 a {
+  color: inherit;
+}
+
+.general-card-root-icons .general-card-box-icons .content-div .content-top-row p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #04d1c5;
+  margin: 0 0 5px 0;
+  letter-spacing: -0.36px;
+  text-align: right;
+  word-break: break-word;
+}
+
+.general-card-root-icons .general-card-box-icons .content-div .time-box {
+  padding: 0;
+  margin: 0 0 10px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 300;
+  font-size: 18px;
+  color: #dbdbdb;
+  letter-spacing: -0.36px;
+}
+
+.general-card-root-icons .general-card-box-icons .content-div .time-box .icon-span {
+  margin: 0 0 0 0;
+  width: 30px;
+  padding: 0 10px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.general-card-root-icons .general-card-box-icons .content-div .time-box .text {
+  width: calc(100% - 30px);
+  word-break: break-word;
+}
+
+.general-card-root-icons .general-card-box-icons .content-div .spots-box {
+  padding: 0;
+  margin: 0 0 10px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 300;
+  font-size: 20px;
+  color: #ff3f3f;
+  letter-spacing: -0.36px;
+}
+
+.general-card-root-icons .general-card-box-icons .content-div .spots-box .icon-span {
+  margin: 0 0 0 0;
+  width: 30px;
+  padding: 0 10px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.general-card-root-icons .general-card-box-icons .content-div .spots-box .text {
+  width: calc(100% - 30px);
+  word-break: break-word;
+}
+
+.general-card-root-icons .general-card-box-icons:hover .top-image-thumb-div .img-thumb .img-responsive {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+  .general-card-root .general-card-box .top-image-thumb-div .img-thumb .img-responsive {
+    height: 300px;
+  }
+  .general-card-root .general-card-box .top-image-thumb-div .top-button-div {
+    top: 15px;
+    left: 15px;
+  }
+  .general-card-root .general-card-box .top-image-thumb-div .btn.btn-like {
+    font-size: 15px;
+    padding: 2px 12px;
+    min-height: 36px;
+  }
+  .general-card-root .general-card-box .top-image-thumb-div .btn.btn-like .bg-custom-icon {
+    width: 18px;
+    height: 18px;
+  }
+  .general-card-root .general-card-box .top-image-thumb-div .btn.btn-like .span-icon {
+    margin: 0 5px 0 0;
+  }
+  .general-card-root .general-card-box .content-div .content-top-row .left-content {
+    width: 100%;
+    display: inline-block;
+    word-break: break-word;
+  }
+  .general-card-root .general-card-box .content-div .content-top-row .right-content {
+    width: 100%;
+  }
+  .general-card-root .general-card-box .content-div .content-top-row h3 {
+    font-size: 18px;
+    text-align: left;
+    margin: 0 0 15px 0;
+  }
+  .general-card-root .general-card-box .content-div .content-top-row h4 {
+    font-size: 18px;
+    text-align: left;
+  }
+  .general-card-root .general-card-box .content-div .content-top-row p {
+    text-align: left;
+  }
+  .general-card-root .general-card-box .content-div .time-box {
+    font-size: 16px;
+    margin: 0 0 15px 0;
+  }
+  .general-card-root .general-card-box .content-div .spots-box {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
+  .general-card-root-icons .general-card-box-icons .content-div {
+    min-height: auto;
+  }
+  .general-card-root-icons .general-card-box-icons .content-div .content-top-row h3 {
+    font-size: 18px;
+  }
+  .general-card-root-icons .general-card-box-icons .content-div .time-box {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+  }
+  .general-card-root-icons .general-card-box-icons .content-div .spots-box {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .general-card-root .general-card-box .top-image-thumb-div .img-thumb .img-responsive {
+    height: 300px;
+  }
+  .general-card-root .general-card-box .top-image-thumb-div .top-button-div {
+    top: 15px;
+    left: 15px;
+  }
+  .general-card-root .general-card-box .top-image-thumb-div .btn.btn-like {
+    font-size: 15px;
+    padding: 2px 12px;
+    min-height: 36px;
+  }
+  .general-card-root .general-card-box .top-image-thumb-div .btn.btn-like .bg-custom-icon {
+    width: 18px;
+    height: 18px;
+  }
+  .general-card-root .general-card-box .top-image-thumb-div .btn.btn-like .span-icon {
+    margin: 0 5px 0 0;
+  }
+  .general-card-root .general-card-box .content-div .content-top-row .left-content {
+    width: 100%;
+    display: inline-block;
+    word-break: break-word;
+  }
+  .general-card-root .general-card-box .content-div .content-top-row .right-content {
+    width: 100%;
+  }
+  .general-card-root .general-card-box .content-div .content-top-row h3 {
+    font-size: 18px;
+    text-align: left;
+    margin: 0 0 15px 0;
+  }
+  .general-card-root .general-card-box .content-div .content-top-row h4 {
+    font-size: 18px;
+    text-align: left;
+  }
+  .general-card-root .general-card-box .content-div .content-top-row p {
+    text-align: left;
+  }
+  .general-card-root .general-card-box .content-div .time-box {
+    font-size: 16px;
+    margin: 0 0 15px 0;
+  }
+  .general-card-root .general-card-box .content-div .spots-box {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
+  .general-card-root-icons .general-card-box-icons .content-div {
+    min-height: auto;
+  }
+  .general-card-root-icons .general-card-box-icons .content-div .content-top-row h3 {
+    font-size: 18px;
+  }
+  .general-card-root-icons .general-card-box-icons .content-div .time-box {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+  }
+  .general-card-root-icons .general-card-box-icons .content-div .spots-box {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=general-card-style.css.map */

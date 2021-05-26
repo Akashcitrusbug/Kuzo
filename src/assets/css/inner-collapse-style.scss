@@ -1,0 +1,508 @@
+.inner-collapse-right-side-root {
+  padding: 35px 45px;
+  margin: 0;
+  position: relative;
+}
+
+.inner-collapse-common-root-area {
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  .back-button-div {
+    padding: 0;
+    margin: 0 0 30px 0;
+    position: relative;
+
+    .back-button-row {
+      padding: 0;
+      margin: 0 0 0 0;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .btn.btn-common-black.btn-back {
+      background: #292929;
+      border: 1px solid #292929;
+      color: #fff;
+      letter-spacing: 0.59px;
+      font-size: 13px;
+      line-height: 20px;
+      min-height: 36px;
+      padding: 5px 25px 4px 25px;
+    }
+  }
+
+  .inner-collapse-view-area-div {
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+}
+
+.ic-details-div {
+  .ic-vertical-tab-pane-inner {
+    padding: 40px 40px 50px 40px;
+
+    .heading-div {
+      margin: 0 0 50px 0;
+
+      h1 {
+        padding: 0;
+        margin: 0 0 20px 0;
+        display: block;
+        width: 100%;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 1.4;
+        color: #fff;
+        letter-spacing: -0.9px;
+      }
+    }
+
+    .ic-tab-custom-inner {
+      padding: 10px 0;
+    }
+  }
+}
+
+.ic-tab-custom-inner {
+  .collapse-primary-card {
+    background-color: #181818;
+    border: 2px solid #00dbd2;
+    border-radius: 6px;
+    margin: 0 0 20px 0;
+
+    .card-header {
+      padding: 0;
+      margin: 0;
+      background-color: #181818;
+      border-bottom: 2px solid rgba(0, 219, 212, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border-radius: 6px 6px 0 0;
+
+      &:first-child {
+        border-radius: 6px 6px 0 0;
+      }
+
+      .card-link {
+        padding: 13px 50px 12px 50px;
+        margin: 0;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.25;
+        color: #121212;
+        letter-spacing: 0.9px;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #48d1c5;
+
+        .down-white-arrow-icon {
+          transform: rotate(180deg);
+          margin: 0 0 0 10px;
+          transition: all 0.8s;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          background-image: url(../images/icons/custom/down-dark-arrow-icon.png);
+        }
+
+        &.collapsed {
+          color: #fff;
+          background-color: transparent;
+
+          .down-white-arrow-icon {
+            transform: rotate(0deg);
+            top: 20px;
+            transition: all 0.8s;
+            background-image: url(../images/icons/custom/down-white-arrow-icon.png);
+          }
+        }
+      }
+    }
+
+    .card-body {
+      font-weight: 500;
+      font-size: 18px;
+      color: #fff;
+      letter-spacing: -0.38px;
+      line-height: 1.5;
+    }
+
+    .ic-general-card-form-root {
+      padding: 0;
+      margin: 0;
+      position: relative;
+
+      .form-custom-div {
+        .btn-group-div {
+          display: flex;
+
+          .btn-common-primary {
+            min-width: 280px;
+          }
+        }
+      }
+    }
+
+    .custom-list-box-div {
+      padding: 0;
+      margin: 0;
+      position: relative;
+
+      .listing-div {
+        padding-right: 20px;
+        max-height: 565px;
+        overflow-y: auto;
+        margin: 0 0 30px 0;
+
+        &::-webkit-scrollbar-track {
+          border-radius: 5px;
+          background-color: transparent;
+        }
+      
+        &::-webkit-scrollbar {
+          width: 5px;
+          background-color: #000;
+        }
+      
+        &::-webkit-scrollbar-thumb {
+          border-radius: 5px;
+          background-color: #04d1c5;
+        }
+      }
+
+      .listing-box {
+        padding: 20px 0 15px 0;
+        margin: 0;
+        position: relative;
+        border-bottom: 1px dashed #48d1c5;
+
+        &:last-child {
+          border-bottom: 0 dashed #48d1c5;
+        }
+
+        .listing-header {
+          padding: 0;
+          margin: 0;
+          position: relative;
+
+          h3 {
+            padding: 0 85px 0 22px;
+            margin: 0 0 10px 0;
+            display: block;
+            width: 100%;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 1.4;
+            color: #fff;
+            letter-spacing: -0.7px;
+            position: relative;
+
+            &::before {
+              content: "";
+              height: 10px;
+              width: 10px;
+              display: inline-block;
+              background-color: #48d1c5;
+              border-radius: 100px;
+              position: absolute;
+              left: 0;
+              top: 11px;
+            }
+          }
+        }
+
+        .listing-body {
+          padding: 0;
+          margin: 0;
+
+          p {
+            font-weight: 400;
+            font-size: 18px;
+            color: #a8a8a8;
+            letter-spacing: 0.09px;
+            line-height: 1.4;
+            margin: 0 auto 10px auto;
+            padding: 0 0 0 20px;
+            display: block;
+          }
+        }
+
+        .button-abs-tr-div {
+          position: absolute;
+          top: 0;
+          right: 0;
+
+          .button-abs-tr-row {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .btn-icon-abs {
+              padding: 0;
+              margin: 0 0 0 10px;
+              color: #48d1c5;
+              font-size: 15px;
+              border-radius: 24px;
+              background-color: #282828;
+              height: 30px;
+              width: 30px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+
+      .button-div-group {
+        .add-question-btn {
+          width: 100%;
+          font-size: 20px;
+          color: #121212;
+          font-weight: 700;
+          letter-spacing: 0.9px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .ic-details-div {
+    .ic-vertical-tab-pane-inner {
+      padding: 30px 0 30px 0;
+
+      .heading-div {
+        margin: 0 0 20px 0;
+
+        h1 {
+          font-size: 30px;
+          margin: 0 0 10px 0;
+        }
+      }
+    }
+  }
+
+  .inner-collapse-right-side-root {
+    padding: 20px 20px;
+  }
+
+  .ic-tab-custom-inner {
+    .collapse-primary-card {
+      .card-header {
+        .card-link {
+          padding: 13px 30px 12px 30px;
+          font-size: 14px;
+          letter-spacing: 0.4px;
+
+          .down-white-arrow-icon {
+            right: 10px;
+            width: 12px;
+            height: 8px;
+            top: 16px;
+          }
+
+          &.collapsed {
+            .down-white-arrow-icon {
+              top: 19px;
+            }
+          }
+        }
+      }
+
+      .card-body {
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 1.4;
+        padding: 10px 15px 15px 15px;
+      }
+
+      .ic-general-card-form-root {
+        .form-custom-div {
+          .btn-group-div {
+            .btn-common-primary {
+              min-width: 100%;
+            }
+          }
+        }
+      }
+
+      .custom-list-box-div {
+        .listing-div {
+          max-height: 500px;
+        }
+
+        .listing-box {
+          padding: 20px 0 15px 0;
+
+          .listing-header {
+            h3 {
+              padding: 0 58px 0 18px;
+              margin: 0 0 8px 0;
+              font-size: 15px;
+              line-height: 1.4;
+              letter-spacing: -0.2px;
+
+              &::before {
+                height: 8px;
+                width: 8px;
+                top: 8px;
+              }
+            }
+          }
+
+          .listing-body {
+            p {
+              font-size: 14px;
+              line-height: 1.5;
+              margin: 0 auto 5px auto;
+              padding: 0 0 0 20px;
+            }
+          }
+
+          .button-abs-tr-div {
+            .button-abs-tr-row {
+              .btn-icon-abs {
+                margin: 0 0 0 5px;
+                font-size: 11px;
+                border-radius: 24px;
+                height: 22px;
+                width: 22px;
+              }
+            }
+          }
+        }
+
+        .button-div-group {
+          .add-question-btn {
+            font-size: 16px;
+            letter-spacing: 0.9px;
+            min-height: 42px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ic-details-div {
+    .ic-vertical-tab-pane-inner {
+      padding: 40px 5px 30px 5px;
+
+      .heading-div {
+        margin: 0 0 20px 0;
+
+        h1 {
+          font-size: 30px;
+          margin: 0 0 10px 0;
+        }
+      }
+    }
+  }
+
+  .inner-collapse-right-side-root {
+    padding: 20px 20px;
+  }
+
+  .ic-tab-custom-inner {
+    .collapse-primary-card {
+      .card-header {
+        .card-link {
+          padding: 13px 30px 12px 30px;
+          font-size: 14px;
+          letter-spacing: 0.4px;
+
+          .down-white-arrow-icon {
+            right: 10px;
+            width: 12px;
+            height: 8px;
+            top: 18px;
+          }
+        }
+      }
+
+      .card-body {
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 1.4;
+        padding: 10px 15px 15px 15px;
+      }
+
+      .ic-general-card-form-root {
+        .form-custom-div {
+          .btn-group-div {
+            .btn-common-primary {
+              min-width: 100%;
+            }
+          }
+        }
+      }
+
+      .custom-list-box-div {
+        .listing-div {
+          max-height: 515px;
+        }
+
+        .listing-box {
+          padding: 20px 0 15px 0;
+
+          .listing-header {
+            h3 {
+              padding: 0 58px 0 18px;
+              margin: 0 0 8px 0;
+              font-size: 15px;
+              line-height: 1.4;
+              letter-spacing: -0.2px;
+
+              &::before {
+                height: 8px;
+                width: 8px;
+                top: 8px;
+              }
+            }
+          }
+
+          .listing-body {
+            p {
+              font-size: 14px;
+              line-height: 1.5;
+              margin: 0 auto 5px auto;
+              padding: 0 0 0 20px;
+            }
+          }
+
+          .button-abs-tr-div {
+            .button-abs-tr-row {
+              .btn-icon-abs {
+                margin: 0 0 0 5px;
+                font-size: 12px;
+                border-radius: 24px;
+                height: 22px;
+                width: 22px;
+              }
+            }
+          }
+        }
+
+        .button-div-group {
+          .add-question-btn {
+            font-size: 16px;
+            letter-spacing: 0.9px;
+            min-height: 42px;
+          }
+        }
+      }
+    }
+  }
+}

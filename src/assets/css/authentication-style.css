@@ -1,0 +1,123 @@
+.auth-main-area {
+  padding: 70px 0;
+}
+
+.auth-account-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.auth-account-section .auth-account-div {
+  padding: 50px 0 50px 0;
+  margin: 0;
+  position: relative;
+}
+
+.auth-account-section .heading-div {
+  padding: 0;
+  margin: 0 auto 15px auto;
+  position: relative;
+}
+
+.auth-account-section .heading-div h3 {
+  padding: 0;
+  margin: 0 0 10px 0;
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1.5;
+  color: #fff;
+  letter-spacing: -0.7px;
+  text-align: center;
+}
+
+.auth-account-section .auth-root-custom .normal-custom-header {
+  padding: 0;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+
+.auth-account-section .auth-root-custom .normal-custom-header .normal-custom-heading-box {
+  width: 100%;
+  position: relative;
+}
+
+.auth-account-section .auth-root-custom .normal-custom-header .normal-custom-heading-box .custom-heading-h2 {
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #04d1c5;
+  border-color: transparent transparent #04d1c5 transparent;
+  letter-spacing: 1.65px;
+  padding: 10px 15px;
+  min-width: 120px;
+  text-align: center;
+  position: relative;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.auth-account-section .auth-root-custom .normal-custom-header .normal-custom-heading-box .custom-heading-h2::before {
+  border-bottom: 2px solid;
+  content: "";
+  width: 100%;
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+}
+
+.auth-account-section .auth-root-custom .normal-custom-header .normal-custom-heading-box .custom-heading-h2 .icon-center {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 5px 0;
+  min-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.auth-account-section .general-card-form-root {
+  padding: 12px 0 0 0;
+}
+
+.auth-account-section .form-custom-div .btn-group-div.mt-15 {
+  margin-top: 15px;
+}
+
+.auth-account-section .form-custom-div .general-card-form-bottom .left-row01 p {
+  color: #a3a3a3;
+}
+
+@media (max-width: 767px) {
+  .auth-main-area {
+    padding: 30px 0;
+  }
+  .auth-account-section .auth-account-div {
+    padding: 30px 0 30px 0;
+  }
+  .auth-account-section .heading-div h3 {
+    font-size: 24px;
+  }
+  .auth-account-section .auth-root-custom .normal-custom-header .normal-custom-heading-box .custom-heading-h2 {
+    font-size: 12px;
+    padding: 10px 10px;
+    min-width: 90px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .auth-main-area {
+    padding: 30px 0;
+  }
+}
+/*# sourceMappingURL=authentication-style.css.map */

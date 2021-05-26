@@ -1,0 +1,196 @@
+.earned-main-section {
+  position: relative;
+}
+
+.earned-main-section .earned-main-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.earned-root-div {
+  padding: 45px 0 25px 0;
+  margin: 0;
+  position: relative;
+  background: #1b1b1b;
+}
+
+.earned-root-div .earned-root-row {
+  margin: 0;
+  position: relative;
+}
+
+.earned-root-div .general-tabs-header {
+  margin: 0 0 20px 0;
+}
+
+.earned-root-div .general-tabs-header .nav-tabs {
+  padding: 0 0 2px 0;
+  margin: 0 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 36px;
+  border: none;
+}
+
+.earned-root-div .general-tabs-header .nav-tabs .nav-item {
+  padding: 0;
+  margin: 0 30px 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.earned-root-div .general-tabs-header .nav-tabs .nav-item:last-child {
+  margin: 0 0 5px 0;
+}
+
+.earned-root-div .general-tabs-header .nav-tabs .nav-item .nav-link {
+  padding: 10px 0 8px 0;
+  font-weight: 500;
+  border: none;
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  color: rgba(89, 89, 89, 0.65);
+  letter-spacing: 1px;
+  opacity: 1;
+  overflow: hidden;
+  background-color: transparent;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.earned-root-div .general-tabs-header .nav-tabs .nav-item .nav-link::before {
+  content: "";
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  -webkit-transform: translateX(-101%);
+          transform: translateX(-101%);
+}
+
+.earned-root-div .general-tabs-header .nav-tabs .nav-item .nav-link:hover::before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.earned-root-div .general-tabs-header .nav-tabs .nav-item .nav-link:hover {
+  color: #fff;
+}
+
+.earned-root-div .general-tabs-header .nav-tabs .nav-item .nav-link.active {
+  color: #fff;
+  font-weight: 700;
+}
+
+.earned-root-div .general-tabs-header .nav-tabs .nav-item .nav-link.active::before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.earned-root-div .earned-content-div {
+  padding: 20px 0 10px 0;
+}
+
+.earned-root-div .earned-content-div h1 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.3;
+  color: #fff;
+  letter-spacing: -0.9px;
+  margin: 0 0 40px 0;
+}
+
+.earned-root-div .earned-content-div h1 .color-text {
+  color: #00dbd2;
+}
+
+.earned-root-div .earned-content-div .content-div {
+  padding: 0;
+  margin: 0 0 30px 0;
+  position: relative;
+}
+
+.earned-root-div .earned-content-div .content-div p {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.4;
+  color: #595959;
+  letter-spacing: 0;
+  margin: 0 0 10px 0;
+}
+
+.earned-root-div .earned-content-div .content-div h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #fff;
+  letter-spacing: -0.62px;
+}
+
+.graph-view-div {
+  padding: 60px 0;
+  margin: 0;
+  position: relative;
+}
+
+.graph-view-div .graph-view-inner {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.graph-view-div .graph-view-inner .thumb-div {
+  padding: 0;
+  text-align: center;
+}
+
+.graph-view-div .graph-view-inner .thumb-div .img-responsive {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .earned-root-div .earned-content-div h1 {
+    font-size: 28px;
+    margin: 0 0 40px 0;
+  }
+  .earned-root-div .earned-content-div .content-div p {
+    font-size: 14px;
+  }
+  .earned-root-div .earned-content-div .content-div h3 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .earned-root-div .earned-content-div h1 {
+    font-size: 28px;
+    margin: 0 0 40px 0;
+  }
+  .earned-root-div .earned-content-div .content-div p {
+    font-size: 14px;
+  }
+  .earned-root-div .earned-content-div .content-div h3 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+}
+/*# sourceMappingURL=influencer-earned-style.css.map */
