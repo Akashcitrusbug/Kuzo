@@ -4,10 +4,13 @@ import userStaticImage from "../../assets/images/icons/default-user-image.png";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import { logout } from "../../services/auth";
+import { getUrl } from "../../Urls/urls";
+import { get, put } from "../../Urls/requests";
 
 function CommonHeader() {
   const history = useHistory();
   const [offset, setOffset] = useState(0);
+  const [userData, setuserData] = useState("");
 
   useEffect(() => {
     window.onscroll = () => {
@@ -38,6 +41,38 @@ function CommonHeader() {
     logout();
     history.push("/");
   };
+
+  const userListDetails = () => {
+    let url = getUrl("profile-details");
+    let token = localStorage.getItem("token");
+    // console.log(url);
+    return get(`${url}`, `${token}`)
+      .then((response) => {
+        console.log(response);
+        const {
+          data: { code, data, status, message },
+        } = response;
+        switch (code) {
+          case 200:
+            if (status === "OK") {
+              setuserData(data);
+            }
+            break;
+          case 400:
+            console.log("400 error");
+            break;
+          default:
+            console.log("default error");
+        }
+      })
+      .catch((error) => {
+        console.log("in catch");
+      });
+  };
+  console.log("user list detials", userData.credit );
+  useEffect(() => {
+    userListDetails();
+  }, []);
   return (
     <header>
       <div
@@ -103,7 +138,7 @@ function CommonHeader() {
                           <div className="right-side">
                             <div className="view-credit-btn-nav">
                               <button className="btn btn-credit-view-nav">
-                                <span className="count-text">45</span>
+                                <span className="count-text">{userData.credit}</span>
                                 <span className="span-icon">
                                   {" "}
                                   <i className="bg-custom-icon credit-icon-active"></i>
