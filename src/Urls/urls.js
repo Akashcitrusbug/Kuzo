@@ -18,6 +18,18 @@ export const getUrl = (type) => {
       return `${baseUrl}/api/v1/profile-details/`;
     case "popular-influencer-list":
       return `${baseUrl}/api/v1/popular-influencer-list/`;
+    case "billing-update":
+      return `${baseUrl}/api/v1/billing-details/add/`;
+    case "billing-details":
+      return `${baseUrl}/api/v1/billing-details/`;
+    case "add-credits":
+      return `${baseUrl}/api/v1/credit/add-credit/`;
+    case "credits":
+      return `${baseUrl}/api/v1/credit/`;
+    case "plan-list":
+      return `${baseUrl}/api/v1/subscribe-plan/`;
+    case "change-subscription":
+      return `${baseUrl}/api/v1/change-subscription/`;
     default:
       return baseUrl;
   }

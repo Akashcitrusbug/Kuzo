@@ -1,19 +1,22 @@
 import React, { useEffect, useState } from "react";
 import CommonHeader from "./CommonHeader";
-import { useParams, useHistory, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import HeaderComponent from "../Index/HeaderComponent";
 import ProfileAccountLeftMenu from "./ProfileAccountLeftMenu";
 import "../../assets/css/profile-style.css";
 import InputComponent from "../../UI/InputComponent/InputComponent";
 import { isAuthenticated } from "../../services/auth";
 import { getUrl } from "../../Urls/urls";
-import { get, put } from "../../Urls/requests";
+import { get, post } from "../../Urls/requests";
+import { connect } from "react-redux";
+import { setCredits } from "../../redux/userAction";
+import SubscriptionComponent from "./SubscriptionComponent";
 
 function AccountSummary() {
-  const params = useParams();
   let token = localStorage.getItem("token");
 
-  const [userListData, setuserListData] = useState("");
+  const [userListData, setuserListData] = useState([""]);
+
   const userListDetails = () => {
     let url = getUrl("profile-details");
     // console.log(url);
@@ -40,15 +43,16 @@ function AccountSummary() {
         console.log("in catch");
       });
   };
-  // console.log("user list detials", userListData.user );
-  useEffect(() => {
-    userListDetails();
-  }, []);
+  // console.log("user list detials", userListData);
 
   const handleEditProfile = () => {
     const url = getUrl("profile-update");
-    
   };
+
+  // console.log("user list detials", planData);
+  useEffect(() => {
+    userListDetails();
+  }, []);
 
   return (
     <>
@@ -140,26 +144,6 @@ function AccountSummary() {
                                           </div>
                                         </div>
                                       </div>
-                                      {/* 
-                                      <div className="col-lg-12 col-md-12">
-                                        <div className="form-group">
-                                          <div className="form-group-row">
-                                            <label className="label-text">
-                                              {" "}
-                                              PASSWORD{" "}
-                                            </label>
-                                            <div className="input-control-div">
-                                              <InputComponent
-                                                inputType="password"
-                                                inputPlaceholder="Password"
-                                                inputName="password"
-                                                inputClassName="form-control"
-                                                inpValue="****************"
-                                              />{" "}
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div> */}
 
                                       <div className="col-lg-12 col-md-12">
                                         <div className="btn-group-div">
@@ -203,160 +187,7 @@ function AccountSummary() {
                                       <div className="col-lg-12 col-md-12">
                                         <div className="plan-credits-root-div">
                                           <div className="row">
-                                            <div className="col-lg-6 col-md-6">
-                                              <div className="account-credit-card-root-inner">
-                                                <div className="book-button-card-box active">
-                                                  <label
-                                                    className="book-button-card-inner"
-                                                    for="plan-radio01"
-                                                  >
-                                                    <div className="col-first">
-                                                      <h3>BASIC</h3>
-                                                      <div className="flex-box">
-                                                        <div className="btn-credit-round">
-                                                          {" "}
-                                                          <span className="count-text">
-                                                            45
-                                                          </span>{" "}
-                                                          <span className="span-icon">
-                                                            {" "}
-                                                            <i className="bg-custom-icon credit-icon-active"></i>
-                                                          </span>{" "}
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                    <div className="col-desc">
-                                                      <h4>$24.95/mo</h4>
-                                                      <p>
-                                                        Buy 60 credits per month
-                                                        and get 30% off
-                                                        additional credits
-                                                      </p>
-                                                    </div>
-                                                    <span className="arrow-check-round">
-                                                      {" "}
-                                                      <span className="round-box">
-                                                        {" "}
-                                                        <i className="bg-custom-icon check-box-icon"></i>{" "}
-                                                      </span>{" "}
-                                                    </span>
-                                                  </label>
-                                                  <input
-                                                    type="radio"
-                                                    name="pricing-plan"
-                                                    id="plan-radio01"
-                                                    className="form-plan-radio d-none"
-                                                    checked
-                                                  />
-                                                </div>
-
-                                                <div className="book-button-card-box">
-                                                  <label
-                                                    className="book-button-card-inner"
-                                                    for="plan-radio02"
-                                                  >
-                                                    <div className="col-first">
-                                                      <h3>POPULAR</h3>
-                                                      <div className="flex-box">
-                                                        <div className="btn-credit-round">
-                                                          {" "}
-                                                          <span className="count-text">
-                                                            125
-                                                          </span>{" "}
-                                                          <span className="span-icon">
-                                                            {" "}
-                                                            <i className="bg-custom-icon credit-icon-active"></i>
-                                                          </span>{" "}
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                    <div className="col-desc">
-                                                      <h4>$49.95/mo</h4>
-                                                      <p>
-                                                        Buy 125 credits per
-                                                        month and get 50% off
-                                                        additional credits
-                                                      </p>
-                                                    </div>
-                                                    <span className="arrow-check-round">
-                                                      {" "}
-                                                      <span className="round-box">
-                                                        {" "}
-                                                        <i className="bg-custom-icon check-box-icon"></i>{" "}
-                                                      </span>{" "}
-                                                    </span>
-                                                  </label>
-                                                  <input
-                                                    type="radio"
-                                                    name="pricing-plan"
-                                                    id="plan-radio02"
-                                                    className="form-plan-radio d-none"
-                                                  />
-                                                </div>
-
-                                                <div className="book-button-card-box">
-                                                  <label
-                                                    className="book-button-card-inner"
-                                                    for="plan-radio03"
-                                                  >
-                                                    <div className="col-first">
-                                                      <h3>PREMIUM</h3>
-                                                      <div className="flex-box">
-                                                        <div className="btn-credit-round">
-                                                          {" "}
-                                                          <span className="count-text">
-                                                            350
-                                                          </span>{" "}
-                                                          <span className="span-icon">
-                                                            {" "}
-                                                            <i className="bg-custom-icon credit-icon-active"></i>
-                                                          </span>{" "}
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                    <div className="col-desc">
-                                                      <h4>$89.95/mo</h4>
-                                                      <p>
-                                                        Buy 350 credits per
-                                                        month and get 70% off
-                                                        additional credits
-                                                      </p>
-                                                    </div>
-                                                    <span className="arrow-check-round">
-                                                      {" "}
-                                                      <span className="round-box">
-                                                        {" "}
-                                                        <i className="bg-custom-icon check-box-icon"></i>{" "}
-                                                      </span>{" "}
-                                                    </span>
-                                                  </label>
-                                                  <input
-                                                    type="radio"
-                                                    name="pricing-plan"
-                                                    id="plan-radio03"
-                                                    className="form-plan-radio d-none"
-                                                  />
-                                                </div>
-                                              </div>
-
-                                              <div className="btn-group-div">
-                                                <div className="btn-group-row">
-                                                  <a
-                                                    href="#"
-                                                    className="btn btn-common-primary btn-common-primary-big btn-change-plan mr-25"
-                                                  >
-                                                    CHOOSE THIS PLAN
-                                                  </a>
-                                                  <a
-                                                    href="profile-add-credits.html"
-                                                    className="btn btn-common-primary btn-common-primary-big btn-add-credits"
-                                                  >
-                                                    ADD MORE CREDITS
-                                                  </a>
-                                                </div>
-                                              </div>
-                                            </div>
-
+                                            <SubscriptionComponent />
                                             <div className="col-lg-6 col-md-6">
                                               <div className="plan-details-text-div">
                                                 <div className="plan-details-text-inner">
@@ -365,7 +196,13 @@ function AccountSummary() {
                                                       <h5> Your Plan:</h5>
                                                     </div>
                                                     <div className="plan-right">
-                                                      <h4>Popular</h4>
+                                                      <h4>
+                                                        {" "}
+                                                        {userListData.subscription !=
+                                                        null
+                                                          ? userListData.subscription.title
+                                                          : "No Plan"}
+                                                      </h4>
                                                     </div>
                                                   </div>
                                                   <div className="plan-details-row">
@@ -384,7 +221,9 @@ function AccountSummary() {
                                                             <i className="bg-custom-icon credit-icon-active"></i>
                                                           </span>{" "}
                                                           <span className="count-text">
-                                                            45
+                                                            {userListData.user
+                                                              ? userListData.credit
+                                                              : ""}
                                                           </span>{" "}
                                                         </button>
                                                       </div>
@@ -394,352 +233,6 @@ function AccountSummary() {
                                               </div>
                                             </div>
                                           </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div id="change-billing-tab" className="tab-pane fade">
-                          <div className="vertical-tab-pane-inner">
-                            <div className="heading-div">
-                              <h1>Change Billing</h1>
-                            </div>
-
-                            <div className="profile-row-tab-custom">
-                              <div className="normal-custom-header-top">
-                                <div className="normal-custom-heading-box">
-                                  <h3>Billing</h3>
-                                  <h2 className="custom-heading-h2 active">
-                                    <span className="center-txt">
-                                      <span className="icon-center">
-                                        {" "}
-                                        <i className="bg-custom-icon stopwatch-icon"></i>{" "}
-                                      </span>
-                                      <span className="txt-span">
-                                        CARD INFORMATION
-                                      </span>
-                                    </span>
-                                  </h2>
-                                </div>
-                              </div>
-
-                              <div className="general-card-form-root">
-                                <div className="general-card-form-top">
-                                  <div className="form-custom-div">
-                                    <div className="row">
-                                      <div className="col-lg-12 col-md-12">
-                                        <div className="form-group">
-                                          <div className="form-group-row">
-                                            <label className="label-text">
-                                              {" "}
-                                              CARD #{" "}
-                                            </label>
-                                            <div className="input-control-div">
-                                              <input
-                                                className="number credit-card-number form-control"
-                                                type="text"
-                                                id="cardnumber"
-                                                name="number"
-                                                value="************2819"
-                                                placeholder="Card Number"
-                                                autocomplete="off"
-                                                maxlength="19"
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-
-                                      <div className="col-lg-12 col-md-12">
-                                        <div className="form-group">
-                                          <div className="form-group-row">
-                                            <label className="label-text">
-                                              {" "}
-                                              EXPIRATION DATE{" "}
-                                            </label>
-                                            <div className="input-control-div">
-                                              <input
-                                                className="number month-number form-control"
-                                                type="text"
-                                                id="Month-number"
-                                                name="number"
-                                                value="1023"
-                                                placeholder="MM/YY"
-                                                data-mask="00/00"
-                                                autocomplete="off"
-                                                maxlength="5"
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-
-                                      <div className="col-lg-12 col-md-12">
-                                        <div className="form-group">
-                                          <div className="form-group-row">
-                                            <label className="label-text">
-                                              {" "}
-                                              CVC{" "}
-                                            </label>
-                                            <div className="input-control-div">
-                                              <input
-                                                type="text"
-                                                className="form-control cvv-code"
-                                                placeholder="CVC"
-                                                id="cvv"
-                                                maxlength="3"
-                                                value="***"
-                                                autocomplete="off"
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-
-                                      <div className="col-lg-12 col-md-12">
-                                        <div className="btn-group-div">
-                                          <div className="btn-group-row">
-                                            <a
-                                              href="#"
-                                              className="btn btn-common-primary btn-common-primary-big btn-edit-billing"
-                                            >
-                                              EDIT BILLING
-                                            </a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div id="add-credits-tab" className="tab-pane fade">
-                          <div className="vertical-tab-pane-inner">
-                            <div className="heading-div">
-                              <h1>Add Credits</h1>
-                            </div>
-
-                            <div className="profile-row-tab-custom">
-                              <div className="normal-custom-header-top">
-                                <div className="normal-custom-heading-box">
-                                  <h3>Choose the number of credits to add</h3>
-                                  <h2 className="custom-heading-h2 active">
-                                    <span className="center-txt">
-                                      <span className="icon-center">
-                                        {" "}
-                                        <i className="bg-custom-icon stopwatch-icon"></i>{" "}
-                                      </span>
-                                      <span className="txt-span">
-                                        CARD INFORMATION
-                                      </span>
-                                    </span>
-                                  </h2>
-                                </div>
-                              </div>
-
-                              <div className="add-credits-view-root">
-                                <div className="row">
-                                  <div className="col-lg-4 col-md-4 add-credits-grid01">
-                                    <div className="credits-left-info-div">
-                                      <div className="credits-left-info-top">
-                                        <h3>You have 45 credits left. </h3>
-                                        <h4>Add more for the below rate:</h4>
-                                      </div>
-
-                                      <div className="credits-left-info-text-box">
-                                        <div className="cl-info-row">
-                                          <h2>
-                                            <span className="text-span">
-                                              PER CREDIT
-                                            </span>
-                                            <span className="number-big">
-                                              $0.36
-                                            </span>
-                                          </h2>
-                                        </div>
-                                        <div className="cl-info-desc-row">
-                                          <p>
-                                            You’re saving 66% on the Popular
-                                            Plan. You could be saving 80% by{" "}
-                                            <a href="#" className="link">
-                                              upgrading
-                                            </a>
-                                            .
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div className="col-lg-3 col-md-3 add-credits-grid02">
-                                    <div className="credits-center-div">
-                                      <div className="credits-center-inner">
-                                        <div className="credits-plan-si active">
-                                          <div className="text-div">
-                                            <h4>25 CREDITS</h4>
-                                          </div>
-                                          <div className="btn-text-div">
-                                            <div className="btn-text-row">
-                                              <div className="button-div">
-                                                <button className="btn btn-credit-general">
-                                                  {" "}
-                                                  <span className="span-icon">
-                                                    {" "}
-                                                    <i className="bg-custom-icon credit-icon-active"></i>
-                                                  </span>{" "}
-                                                  <span className="count-text">
-                                                    25
-                                                  </span>{" "}
-                                                </button>
-                                              </div>
-                                              <h5> $9</h5>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <div className="credits-plan-si">
-                                          <div className="text-div">
-                                            <h4>50 CREDITS</h4>
-                                          </div>
-                                          <div className="btn-text-div">
-                                            <div className="btn-text-row">
-                                              <div className="button-div">
-                                                <button className="btn btn-credit-general">
-                                                  {" "}
-                                                  <span className="span-icon">
-                                                    {" "}
-                                                    <i className="bg-custom-icon credit-icon-active"></i>
-                                                  </span>{" "}
-                                                  <span className="count-text">
-                                                    50
-                                                  </span>{" "}
-                                                </button>
-                                              </div>
-                                              <h5> $18</h5>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <div className="credits-plan-si">
-                                          <div className="text-div">
-                                            <h4>75 CREDITS</h4>
-                                          </div>
-                                          <div className="btn-text-div">
-                                            <div className="btn-text-row">
-                                              <div className="button-div">
-                                                <button className="btn btn-credit-general">
-                                                  {" "}
-                                                  <span className="span-icon">
-                                                    {" "}
-                                                    <i className="bg-custom-icon credit-icon-active"></i>
-                                                  </span>{" "}
-                                                  <span className="count-text">
-                                                    75
-                                                  </span>{" "}
-                                                </button>
-                                              </div>
-                                              <h5> $27</h5>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div className="col-lg-5 col-md-5 add-credits-grid03">
-                                    <div className="credit-card-input-root">
-                                      <div className="account-card-root-div">
-                                        <h4>
-                                          You’ve selected{" "}
-                                          <span className="font-bold">
-                                            25 credits for $9
-                                          </span>
-                                          .
-                                        </h4>
-
-                                        <div className="account-card-box">
-                                          <div className="account-card-box-row">
-                                            <div className="icon-div">
-                                              {" "}
-                                              <i className="bg-custom-icon credit-card-icon"></i>{" "}
-                                              <span></span>{" "}
-                                            </div>
-                                            <div className="card-number">
-                                              {" "}
-                                              <input
-                                                className="number credit-card-number form-control"
-                                                type="text"
-                                                id="cardnumber"
-                                                name="number"
-                                                placeholder="Card Number"
-                                                data-mask="0000 0000 0000 0000"
-                                                autocomplete="off"
-                                                maxlength="19"
-                                              />{" "}
-                                            </div>
-                                            <div className="card-exp-time">
-                                              {" "}
-                                              <input
-                                                className="number month-number form-control"
-                                                type="text"
-                                                id="Month-number"
-                                                name="number"
-                                                placeholder="MM/YY"
-                                                data-mask="00/00"
-                                                autocomplete="off"
-                                                maxlength="5"
-                                              />{" "}
-                                            </div>
-                                            <div className="card-cvc">
-                                              {" "}
-                                              <input
-                                                type="text"
-                                                className="form-control cvvcode"
-                                                placeholder="CVC"
-                                                id="cvv"
-                                                maxlength="3"
-                                                data-mask="000"
-                                                autocomplete="off"
-                                              />{" "}
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <div className="btn-group-div">
-                                          <div className="btn-group-row">
-                                            <a
-                                              href="#"
-                                              className="btn btn-common-primary btn-common-primary-big btn-buy-now"
-                                            >
-                                              BUY NOW
-                                            </a>
-                                          </div>
-                                        </div>
-
-                                        <div className="desc-div">
-                                          <p>
-                                            By purchasing, you agree to ICON’s{" "}
-                                            <a href="#" className="link">
-                                              Cancellation Policy
-                                            </a>
-                                            ,{" "}
-                                            <a href="#" className="link">
-                                              Terms of Service
-                                            </a>{" "}
-                                            and{" "}
-                                            <a href="#" className="link">
-                                              Privacy Policy
-                                            </a>
-                                            .
-                                          </p>
                                         </div>
                                       </div>
                                     </div>
@@ -762,4 +255,9 @@ function AccountSummary() {
   );
 }
 
-export default AccountSummary;
+const mapDispatchToProps = (dispatch) => ({
+  setCredits: (payload) => dispatch(setCredits(payload)),
+});
+
+export default connect("", mapDispatchToProps)(AccountSummary);
+// export default AccountSummary;

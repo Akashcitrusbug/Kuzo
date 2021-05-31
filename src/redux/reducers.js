@@ -1,7 +1,8 @@
-import * as types from "../actions/actionTypes";
+import * as types from "./actionTypes";
 
 const initialState = {
   signupData: "",
+  credits:0
 };
 
 const authUser = (state = initialState, action) => {
@@ -11,9 +12,15 @@ const authUser = (state = initialState, action) => {
         ...state,
         signupData: action.payload,
       };
+    case types.SET_CREDITS:
+      return {
+        ...state,
+        credits: initialState.credits + action.payload,
+      };
     default:
       return state;
   }
 };
 
+console.log(initialState.credits,'+++++++++++++++++++++');
 export default authUser;

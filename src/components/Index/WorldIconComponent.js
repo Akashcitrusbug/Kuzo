@@ -124,7 +124,7 @@ function WorldIconComponent() {
                     {iconListData &&
                       iconListData.map((influencerData) => {
                         return (
-                          <div className="item">
+                          <div className="item" key={influencerData.id}>
                             <div className="icons-slider-box">
                               <a
                                 href="influencer.html"
