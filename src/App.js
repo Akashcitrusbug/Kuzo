@@ -38,7 +38,7 @@ function App() {
         <Route exact path={"/change-password"} component={ChangePassword} />
         <Route exact path={"/browse"} component={Browse} />
         <Route exact path={"/influencer/:id"} component={Influencer} />
-        <Route exact path={"/book-influencer"} component={BookInfluncer} />
+        <Route exact path={"/book-influencer/:id"} component={BookInfluncer} />
       </Router>
     </Provider>
   );

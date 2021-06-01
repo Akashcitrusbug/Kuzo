@@ -1,8 +1,60 @@
-import React from "react";
-import img1 from "../../assets/images/event/event-img1.jpg";
-import class_icon from "../../assets/images/icons/class-icon.png";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { getUrl } from "../../Urls/urls";
+import { get } from "../../Urls/requests";
+import no_image from "../../assets/images/no-image03.png";
 
 function BookInfluencerleft() {
+  let params = useParams();
+  const [iconData, seticonData] = useState("");
+  const [offerData, setofferData] = useState("");
+  const [eventClassData, seteventClassData] = useState("");
+  const [upcomingEventData, setupcomingEventData] = useState("");
+  const [userData, setuserData] = useState("");
+  const [aboutData, setaboutData] = useState("");
+  const [photoData, setphotoData] = useState("");
+  const iconDetails = () => {
+    // console.log("in icon detail");
+    let url = getUrl("event-details");
+    url = url + "/" + params.id;
+    // console.log(url);
+    return get(`${url}`)
+      .then((response) => {
+        const {
+          data: { code, data, status, message },
+        } = response;
+        // console.log(data);
+        switch (code) {
+          case 200:
+            if (status === "OK") {
+              seticonData(data);
+              setuserData(data.user);
+              seteventClassData(data.event_class);
+              setofferData(data.event_offer[0].offer);
+              setupcomingEventData(data.upcoming_events);
+              setaboutData(data.about);
+              setphotoData(data.photo);
+              console.log("in 200 scuuess");
+            }
+            break;
+          case 400:
+            console.log("in 400");
+            break;
+          default:
+            console.log("in default");
+        }
+      })
+      .catch((error) => {
+        console.log("in catch");
+      });
+  };
+
+  useEffect(() => {
+    iconDetails();
+  }, [params.id]);
+  // console.log(iconData);
+  // console.log(offerData);
+
   return (
     <>
       {" "}
@@ -36,7 +88,9 @@ function BookInfluencerleft() {
                               <div className="top-image-thumb-div">
                                 <div className="img-thumb">
                                   <img
-                                    src={img1}
+                                    src={
+                                      photoData != null ? photoData : no_image
+                                    }
                                     className="img-fluid img-responsive"
                                     alt="event"
                                   />
@@ -48,7 +102,9 @@ function BookInfluencerleft() {
                                       {" "}
                                       <i className="bg-custom-icon credit-icon-active"></i>
                                     </span>{" "}
-                                    <span className="count-text">45</span>{" "}
+                                    <span className="count-text">
+                                      {iconData.credit_required}
+                                    </span>{" "}
                                   </button>
                                 </div>
                               </div>
@@ -61,8 +117,7 @@ function BookInfluencerleft() {
                                         href="influencer.html"
                                         className="link"
                                       >
-                                        The Journey to Becoming an Instagram
-                                        Influencer
+                                        {eventClassData.name}
                                       </a>
                                     </h3>
                                     <div className="time-row">
@@ -71,7 +126,8 @@ function BookInfluencerleft() {
                                           <i className="bg-custom-icon calendar-icon"></i>
                                         </span>
                                         <span className="text">
-                                          Sat, Sept 12 &#x2022; 10:00 AM EST
+                                          {iconData.event_date_time}{" "}
+                                          {iconData.time_zone}
                                         </span>
                                       </div>
                                     </div>
@@ -79,10 +135,10 @@ function BookInfluencerleft() {
                                   <div className="right-content">
                                     <h4>
                                       <a href="#" className="link">
-                                        Emma Scott
+                                        {userData.name}
                                       </a>
                                     </h4>
-                                    <p>Instagram</p>
+                                    {/* <p>Instagram</p> */}
                                   </div>
                                 </div>
                                 <div className="spots-row">
@@ -91,7 +147,7 @@ function BookInfluencerleft() {
                                       <i className="bg-custom-icon spot-alert-icon"></i>
                                     </span>
                                     <span className="text">
-                                      Only 3 spots left
+                                      Only {iconData.remaining_spots} spots left
                                     </span>
                                   </div>
                                 </div>
@@ -116,7 +172,7 @@ function BookInfluencerleft() {
                             <div className="icons-card-info-box-left">
                               <div className="img-thumb">
                                 <img
-                                  src={class_icon}
+                                  src={offerData.icon}
                                   className="img-fluid img-responsive img-className"
                                   alt="icon"
                                 />
@@ -125,83 +181,17 @@ function BookInfluencerleft() {
                                 <h4>
                                   {" "}
                                   <a href="#" className="link">
-                                    Live className
+                                    {offerData.title}
                                   </a>
                                 </h4>
-                                <p>
-                                  Attend a 1 hour className, learn, and ask
-                                  questions.
-                                </p>
+                                <p>{offerData.description}</p>
                               </div>
                             </div>
 
                             <div className="icons-card-info-box-right">
                               <div className="desc-content-div">
-                                <p className="font-w500">
-                                  Emma Scott has built an impressive Instagram
-                                  following, inspiring millions of young women
-                                  around the world to pursue their dreams. In
-                                  this Live className, come hang out with Emma
-                                  to learn all about how to grow an Instagram
-                                  page and become an influencer. She’ll explain
-                                  how to tackle some of your biggest fears, and
-                                  work through some of the mental obstacles that
-                                  may be in your way. Emma will talk about her
-                                  mental strategy for approaching her goals, as
-                                  well as give behind-the-scenes info on the
-                                  production side of her videos, to pull the
-                                  curtain back on her successful Challenge
-                                  Accepted series.
-                                </p>
+                                <p className="font-w500">{aboutData}</p>
                               </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="dark-card-agenda">
-                  <div className="dark-card-agenda-inner">
-                    <div className="dark-card-info-header">
-                      <h3>What's On The Agenda</h3>
-                    </div>
-                    <div className="dark-card-info-body">
-                      <div className="row">
-                        <div className="col-lg-12 col-md-12">
-                          <div className="icons-card-info-box">
-                            <div className="desc-content-div-row">
-                              <h4>
-                                {" "}
-                                <a href="#" className="link">
-                                  Intro (2 min)
-                                </a>
-                              </h4>
-                              <p>Meet Emma + learn about ICONS!</p>
-                            </div>
-
-                            <div className="desc-content-div-row">
-                              <h4>
-                                {" "}
-                                <a href="#" className="link">
-                                  Class Lecture (40 min)
-                                </a>
-                              </h4>
-                              <p>
-                                Learn how to host a workshop style event, from
-                                setup to completion.
-                              </p>
-                            </div>
-
-                            <div className="desc-content-div-row">
-                              <h4>
-                                {" "}
-                                <a href="#" className="link">
-                                  Q&A (15 min)
-                                </a>
-                              </h4>
-                              <p>Emma will take questions from the audience.</p>
                             </div>
                           </div>
                         </div>

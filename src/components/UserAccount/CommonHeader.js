@@ -48,7 +48,7 @@ function CommonHeader() {
     // console.log(url);
     return get(`${url}`, `${token}`)
       .then((response) => {
-        console.log(response);
+        // console.log(response);
         const {
           data: { code, data, status, message },
         } = response;
@@ -69,7 +69,7 @@ function CommonHeader() {
         console.log("in catch");
       });
   };
-  console.log("user list detials", userData.credit );
+  // console.log("user list detials", userData.credit );
   useEffect(() => {
     userListDetails();
   }, []);
