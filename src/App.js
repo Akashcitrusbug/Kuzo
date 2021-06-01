@@ -37,7 +37,7 @@ function App() {
         <Route exact path={"/add-credits"} component={AddCredits} />
         <Route exact path={"/change-password"} component={ChangePassword} />
         <Route exact path={"/browse"} component={Browse} />
-        <Route exact path={"/influencer"} component={Influencer} />
+        <Route exact path={"/influencer/:id"} component={Influencer} />
         <Route exact path={"/book-influencer"} component={BookInfluncer} />
       </Router>
     </Provider>

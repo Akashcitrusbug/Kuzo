@@ -1,13 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import HeaderComponent from "../Index/HeaderComponent";
-import ProfileAccountLeftMenu from "./ProfileAccountLeftMenu";
 import "../../assets/css/profile-style.css";
-import InputComponent from "../../UI/InputComponent/InputComponent";
-import { isAuthenticated } from "../../services/auth";
 import { getUrl } from "../../Urls/urls";
 import { get, post } from "../../Urls/requests";
-import { connect } from "react-redux";
 
 function SubscriptionComponent() {
   let token = localStorage.getItem("token");
