@@ -127,7 +127,7 @@ function WorldIconComponent() {
                           <div className="item" key={influencerData.id}>
                             <div className="icons-slider-box">
                               <Link
-                                to={`/influencer/${influencerData.id}`} 
+                                to={`/influencer/${influencerData.user.id}`} 
                                 className="link slider-link-box"
                               >
                                 <div className="icons-thumb-image">
