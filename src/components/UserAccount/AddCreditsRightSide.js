@@ -24,6 +24,7 @@ function AddCreditsRightSide() {
   const [userCardData, setuserCardData] = useState("");
   const [creditList, setcreditList] = useState("");
   const [selectedCredit, setselectedCredit] = useState("");
+  const [creditErr, setCreditErr] = useState({});
   const [selectedCreditNumber, setselectedCreditNumber] = useState("");
   const [selectedCreditPrice, setselectedCreditPrice] = useState("");
 
@@ -34,7 +35,7 @@ function AddCreditsRightSide() {
     const isValid = formValidation();
 
     if (isValid) {
-      console.log(isValid);
+      // console.log(isValid);
       setCardNumber("");
       setExpiry("");
       setCvc("");
@@ -45,17 +46,17 @@ function AddCreditsRightSide() {
       //   }
 
       const cardNumberElement = elements.getElement(CardNumberElement);
-      console.log(cardNumberElement);
+      // console.log(cardNumberElement);
 
       const result = await stripe.createToken(cardNumberElement);
       console.log("hi");
       if (result.error) {
         console.log("[ERROR]", result.error);
       } else {
-        console.log("[CARD-TOKEN]", result.token);
+        console.log("[TOKEN]", result.token);
         // let response='';
         let url = getUrl("add-credits");
-        console.log(url, "=====");
+        // console.log(url, "=====");
         let data = {
           stripe_token: result.token.id,
           credit: selectedCredit,
@@ -71,6 +72,8 @@ function AddCreditsRightSide() {
                 if (status === "OK") {
                   // setuserListData(data);
                   console.log("OKokOOKOKOKOKO");
+                  // history.push("/add-credits/");
+                  window.location.reload();
                 }
                 break;
               case 400:
@@ -91,6 +94,7 @@ function AddCreditsRightSide() {
     const numberErr = {};
     const exErr = {};
     const cErr = {};
+    const crediterror = {};
     let isValid = true;
 
     if (cardNumber == false) {
@@ -107,10 +111,15 @@ function AddCreditsRightSide() {
       cErr.cvcRequired = "Enter your card cvc properly!";
       isValid = false;
     }
+    if (selectedCredit == "") {
+      crediterror.cvcRequired = "Select any credits!";
+      isValid = false;
+    }
 
     setCardNumberErr(numberErr);
     setExpiryErr(exErr);
     setCvcErr(cErr);
+    setCreditErr(crediterror);
     return isValid;
   };
 
@@ -211,17 +220,25 @@ function AddCreditsRightSide() {
                                 creditList.map((credits) => {
                                   return (
                                     <div
-                                      className= {selectedCredit === credits.id ? 'credits-plan-si active' : 'credits-plan-si'}
+                                      className={
+                                        selectedCredit === credits.id
+                                          ? "credits-plan-si active"
+                                          : "credits-plan-si"
+                                      }
                                       key={credits.id}
                                       onClick={(e) => {
-                                          setselectedCredit(credits.id)
-                                          setselectedCreditNumber(credits.number_of_credit)
-                                          setselectedCreditPrice(credits.price)
+                                        setselectedCredit(credits.id);
+                                        setselectedCreditNumber(
+                                          credits.number_of_credit
+                                        );
+                                        setselectedCreditPrice(credits.price);
                                       }}
                                       data-key={credits.id}
                                     >
                                       <div className="text-div">
-                                        <h4>{credits.number_of_credit} CREDITS</h4>
+                                        <h4>
+                                          {credits.number_of_credit} CREDITS
+                                        </h4>
                                       </div>
                                       <div className="btn-text-div">
                                         <div className="btn-text-row">
@@ -256,7 +273,9 @@ function AddCreditsRightSide() {
                               <h4>
                                 You’ve selected{" "}
                                 <span className="font-bold">
-                                    {selectedCredit ? `${selectedCreditNumber} credits for $ ${selectedCreditPrice}` : '0 credits for $0'}
+                                  {selectedCredit
+                                    ? `${selectedCreditNumber} credits for $ ${selectedCreditPrice}`
+                                    : "0 credits for $0"}
                                   {/* 25 credits for $9 */}
                                 </span>
                                 .
@@ -342,6 +361,13 @@ function AddCreditsRightSide() {
                                 return (
                                   <span key={index} style={{ color: "red" }}>
                                     {cvcErr[key]}
+                                  </span>
+                                );
+                              })}<br />
+                              {Object.keys(creditErr).map((key, index) => {
+                                return (
+                                  <span key={index} style={{ color: "red" }}>
+                                    {creditErr[key]}
                                   </span>
                                 );
                               })}

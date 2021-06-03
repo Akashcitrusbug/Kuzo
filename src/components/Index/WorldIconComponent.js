@@ -127,7 +127,7 @@ function WorldIconComponent() {
                           <div className="item" key={influencerData.id}>
                             <div className="icons-slider-box">
                               <Link
-                                to={`/influencer/${influencerData.user.id}`} 
+                                to={`/influencer/${influencerData.user.id}`}
                                 className="link slider-link-box"
                               >
                                 <div className="icons-thumb-image">
@@ -154,131 +154,6 @@ function WorldIconComponent() {
                           </div>
                         );
                       })}
-                    {/* <div className="item">
-                      <div className="icons-slider-box">
-                        <a
-                          href="influencer.html"
-                          className="link slider-link-box"
-                        >
-                          <div className="icons-thumb-image">
-                            <div className="img-thumb">
-                              {" "}
-                              <img
-                                src={icon_image_1}
-                                className="img-fluid img-responsive"
-                                alt="icons"
-                              />{" "}
-                            </div>
-                          </div>
-                          <div className="icons-content-div">
-                            <h5>Tammie Kas</h5>
-                            <h3>10M FOLLOWERS</h3>
-                            <h4>INSTAGRAM</h4>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div className="item">
-                      <div className="icons-slider-box">
-                        <a
-                          href="influencer.html"
-                          className="link slider-link-box"
-                        >
-                          <div className="icons-thumb-image">
-                            <div className="img-thumb">
-                              {" "}
-                              <img
-                                src={icon_image_2}
-                                className="img-fluid img-responsive"
-                                alt="icons"
-                              />{" "}
-                            </div>
-                          </div>
-                          <div className="icons-content-div">
-                            <h5>Max Parker</h5>
-                            <h3>1B PLAYS</h3>
-                            <h4>TIK TOK</h4>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div className="item">
-                      <div className="icons-slider-box">
-                        <a
-                          href="influencer.html"
-                          className="link slider-link-box"
-                        >
-                          <div className="icons-thumb-image">
-                            <div className="img-thumb">
-                              {" "}
-                              <img
-                                src={icon_image_3}
-                                className="img-fluid img-responsive"
-                                alt="icons"
-                              />{" "}
-                            </div>
-                          </div>
-                          <div className="icons-content-div">
-                            <h5>Emma Scott</h5>
-                            <h3>7M SUBSCRIBERS</h3>
-                            <h4>YOUTUBE</h4>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div className="item">
-                      <div className="icons-slider-box">
-                        <a
-                          href="influencer.html"
-                          className="link slider-link-box"
-                        >
-                          <div className="icons-thumb-image">
-                            <div className="img-thumb">
-                              {" "}
-                              <img
-                                src={icon_image_4}
-                                className="img-fluid img-responsive"
-                                alt="icons"
-                              />{" "}
-                            </div>
-                          </div>
-                          <div className="icons-content-div">
-                            <h5>Carlos Fang</h5>
-                            <h3>EMMY NOMINEE</h3>
-                            <h4>ACTOR</h4>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div className="item">
-                      <div className="icons-slider-box">
-                        <a
-                          href="influencer.html"
-                          className="link slider-link-box"
-                        >
-                          <div className="icons-thumb-image">
-                            <div className="img-thumb">
-                              {" "}
-                              <img
-                                src={event_img_2}
-                                className="img-fluid img-responsive"
-                                alt="icons"
-                              />{" "}
-                            </div>
-                          </div>
-                          <div className="icons-content-div">
-                            <h5>Will King</h5>
-                            <h3>12M SUBSCRIBERS</h3>
-                            <h4>YOUTUBE</h4>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                   */}
                   </OwlCarousel>
                 </div>
               </div>

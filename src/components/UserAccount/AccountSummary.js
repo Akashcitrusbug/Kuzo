@@ -16,6 +16,7 @@ function AccountSummary() {
   let token = localStorage.getItem("token");
 
   const [userListData, setuserListData] = useState([""]);
+  const [subscriptionData, setsubscriptionData] = useState([""]);
 
   const userListDetails = () => {
     let url = getUrl("profile-details");
@@ -30,6 +31,8 @@ function AccountSummary() {
           case 200:
             if (status === "OK") {
               setuserListData(data);
+              setsubscriptionData(data.subscription)
+              console.log('in 200');
             }
             break;
           case 400:
@@ -43,7 +46,7 @@ function AccountSummary() {
         console.log("in catch");
       });
   };
-  // console.log("user list detials", userListData);
+  // console.log("user list detials", subscriptionData);
 
   const handleEditProfile = () => {
     const url = getUrl("profile-update");
@@ -187,7 +190,7 @@ function AccountSummary() {
                                       <div className="col-lg-12 col-md-12">
                                         <div className="plan-credits-root-div">
                                           <div className="row">
-                                            <SubscriptionComponent />
+                                            <SubscriptionComponent plan={subscriptionData.id}/>
                                             <div className="col-lg-6 col-md-6">
                                               <div className="plan-details-text-div">
                                                 <div className="plan-details-text-inner">

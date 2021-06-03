@@ -4,10 +4,12 @@ import "../../assets/css/profile-style.css";
 import { getUrl } from "../../Urls/urls";
 import { get, post } from "../../Urls/requests";
 
-function SubscriptionComponent() {
+function SubscriptionComponent(subscriptionData) {
+  // console.log(subscriptionData);
   let token = localStorage.getItem("token");
   const [planData, setplanData] = useState("");
   const [selectedPlanId, setselectedPlanId] = useState("");
+  // setselectedPlanId(subscriptionData != '' ? subscriptionData.plan : '')
 
   const planListDetails = () => {
     let url = getUrl("plan-list");
@@ -22,6 +24,10 @@ function SubscriptionComponent() {
           case 200:
             if (status === "OK") {
               setplanData(data);
+              setselectedPlanId(
+                subscriptionData.plan != undefined ? subscriptionData.plan : ""
+              );
+              console.log("in 200");
             }
             break;
           case 400:
@@ -51,6 +57,7 @@ function SubscriptionComponent() {
           case 200:
             if (status === "OK") {
               console.log("Plan Subscribed");
+              window.location.reload();
             }
             break;
           case 400:
@@ -64,7 +71,7 @@ function SubscriptionComponent() {
         console.log("in catch");
       });
   };
-  // console.log("user list detials", planData);
+  // console.log("user list detials", selectedPlanId);
   useEffect(() => {
     planListDetails();
   }, []);
@@ -78,9 +85,9 @@ function SubscriptionComponent() {
                 <div
                   key={plans.id}
                   className={
-                    selectedPlanId === plans.id
-                      ? "book-button-card-box active"
-                      : "book-button-card-box"
+                    selectedPlanId !== plans.id
+                      ? "book-button-card-box "
+                      : "book-button-card-box active"
                   }
                   onClick={(e) => {
                     setselectedPlanId(plans.id);

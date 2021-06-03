@@ -34,13 +34,15 @@ function CardForm() {
       setExpiry("");
       setCvc("");
 
-      if (!stripe || !elements) {
-        return;
-      }
+      // if (!stripe || !elements) {
+      //   return;
+      // }
 
       const cardNumberElement = elements.getElement(CardNumberElement);
+      // console.log(cardNumberElement);
 
       const result = await stripe.createToken(cardNumberElement);
+      // console.log(result);
 
       if (result.error) {
         console.log("[ERROR]", result.error);
@@ -160,7 +162,7 @@ function CardForm() {
                   <div className="form-group-row">
                     <label className="label-text"> CARD # </label>
                     <div className="input-control-div">
-                      <input
+                      <CardNumberElement
                         className="number credit-card-number form-control"
                         id="cardnumber"
                         name="number"
@@ -172,20 +174,20 @@ function CardForm() {
                         onChange={(e) => {
                           setCardNumber(e.complete);
                         }}
-                        // options={{
-                        //   style: {
-                        //     base: {
-                        //       fontSize: "20px",
-                        //       color: "#ffffff",
-                        //       "::placeholder": {
-                        //         color: "#4e5278",
-                        //       },
-                        //     },
-                        //     invalid: {
-                        //       color: "red",
-                        //     },
-                        //   },
-                        // }}
+                        options={{
+                          style: {
+                            base: {
+                              fontSize: "20px",
+                              color: "#ffffff",
+                              "::placeholder": {
+                                color: "#4e5278",
+                              },
+                            },
+                            invalid: {
+                              color: "red",
+                            },
+                          },
+                        }}
                       />
                       {Object.keys(cardNumberErr).map((key, index) => {
                         return (
@@ -204,7 +206,7 @@ function CardForm() {
                   <div className="form-group-row">
                     <label className="label-text"> EXPIRATION DATE </label>
                     <div className="input-control-div">
-                      <input
+                      <CardExpiryElement
                         className="number month-number form-control"
                         id="Month-number"
                         name="number"
@@ -215,20 +217,20 @@ function CardForm() {
                         onChange={(e) => {
                           setExpiry(e.complete);
                         }}
-                        // options={{
-                        //   style: {
-                        //     base: {
-                        //       fontSize: "20px",
-                        //       color: "#ffffff",
-                        //       "::placeholder": {
-                        //         color: "#4e5278",
-                        //       },
-                        //     },
-                        //     invalid: {
-                        //       color: "red",
-                        //     },
-                        //   },
-                        // }}
+                        options={{
+                          style: {
+                            base: {
+                              fontSize: "20px",
+                              color: "#ffffff",
+                              "::placeholder": {
+                                color: "#4e5278",
+                              },
+                            },
+                            invalid: {
+                              color: "red",
+                            },
+                          },
+                        }}
                       />
                       {Object.keys(expiryErr).map((key, index) => {
                         return (
@@ -247,7 +249,7 @@ function CardForm() {
                   <div className="form-group-row">
                     <label className="label-text"> CVC </label>
                     <div className="input-control-div">
-                      <input
+                      <CardCvcElement
                         className="form-control cvv-code"
                         id="cvv"
                         name="number"
@@ -258,20 +260,20 @@ function CardForm() {
                         onChange={(e) => {
                           setCvc(e.complete);
                         }}
-                        // options={{
-                        //   style: {
-                        //     base: {
-                        //       fontSize: "20px",
-                        //       color: "#ffffff",
-                        //       "::placeholder": {
-                        //         color: "#4e5278",
-                        //       },
-                        //     },
-                        //     invalid: {
-                        //       color: "red",
-                        //     },
-                        //   },
-                        // }}
+                        options={{
+                          style: {
+                            base: {
+                              fontSize: "20px",
+                              color: "#ffffff",
+                              "::placeholder": {
+                                color: "#4e5278",
+                              },
+                            },
+                            invalid: {
+                              color: "red",
+                            },
+                          },
+                        }}
                       />
                       {Object.keys(cvcErr).map((key, index) => {
                         return (
