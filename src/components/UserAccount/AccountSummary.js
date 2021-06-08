@@ -23,7 +23,7 @@ function AccountSummary() {
     // console.log(url);
     return get(`${url}`, `${token}`)
       .then((response) => {
-        console.log(response);
+        // console.log(response);
         const {
           data: { code, data, status, message },
         } = response;

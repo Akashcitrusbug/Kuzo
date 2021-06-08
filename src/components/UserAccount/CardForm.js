@@ -22,6 +22,7 @@ function CardForm() {
   const [expiryErr, setExpiryErr] = useState({});
   const [cvcErr, setCvcErr] = useState({});
   const [userCardData, setuserCardData] = useState("");
+  const [cardAddedSuccess, setcardAddedSuccess] = useState(false);
 
   let token = localStorage.getItem("token");
   const handleSubmit = async (e) => {
@@ -50,13 +51,12 @@ function CardForm() {
         console.log("[CARD-TOKEN]", result.token);
         // let response='';
         let url = getUrl("billing-update");
-        console.log(url, "=====");
         let data = {
           source: result.token.id,
         };
         return post(`${url}`, data, token)
           .then((response) => {
-            console.log(response);
+            // console.log(response);
             const {
               data: { code, data, status, message },
             } = response;
@@ -64,6 +64,7 @@ function CardForm() {
               case 200:
                 if (status === "OK") {
                   // setuserListData(data);
+                  setcardAddedSuccess(true);
                   console.log("OKokOOKOKOKOKO");
                 }
                 break;
@@ -122,10 +123,10 @@ function CardForm() {
           case 200:
             if (status === "OK") {
               setuserCardData(data);
-              var cardumber = 'XXXX XXXX XXXX ' + data[0].last4;
-              setCardNumber(cardumber)
-              setExpiry(data[0].card_expiration_date)
-              setCvc('...')
+              var cardumber = "XXXX XXXX XXXX " + data[0].last4;
+              setCardNumber(cardumber);
+              setExpiry(data[0].card_expiration_date);
+              setCvc("...");
             }
             break;
           case 400:
@@ -139,13 +140,13 @@ function CardForm() {
       .catch((error) => {
         console.log("in catch");
       });
-    };
-    // setCardNumber(userCardData[0].last4)
-//   console.log(userCardData[0].last4);
-    // // if (userCardData){
-    //     var carnumber = 'XXXX XXXX XXXX ' + userCardData[0].last4
-    //     setCardNumber(carnumber)
-    // }
+  };
+  // setCardNumber(userCardData[0].last4)
+  //   console.log(userCardData[0].last4);
+  // // if (userCardData){
+  //     var carnumber = 'XXXX XXXX XXXX ' + userCardData[0].last4
+  //     setCardNumber(carnumber)
+  // }
 
   useEffect(() => {
     userCardDetails();
@@ -154,6 +155,9 @@ function CardForm() {
   return (
     <>
       <div className="general-card-form-root">
+        <div style={{ color: "blue" }}>
+          {cardAddedSuccess ? "Card Details updateD successfully" : ""}
+        </div>
         <div className="general-card-form-top">
           <div className="form-custom-div">
             <div className="row">

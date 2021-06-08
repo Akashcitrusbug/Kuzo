@@ -5,11 +5,10 @@ import { getUrl } from "../../Urls/urls";
 import { get, post } from "../../Urls/requests";
 
 function SubscriptionComponent(subscriptionData) {
-  // console.log(subscriptionData);
+  console.log(subscriptionData);
   let token = localStorage.getItem("token");
   const [planData, setplanData] = useState("");
   const [selectedPlanId, setselectedPlanId] = useState("");
-  // setselectedPlanId(subscriptionData != '' ? subscriptionData.plan : '')
 
   const planListDetails = () => {
     let url = getUrl("plan-list");
@@ -24,8 +23,9 @@ function SubscriptionComponent(subscriptionData) {
           case 200:
             if (status === "OK") {
               setplanData(data);
+              console.log(subscriptionData.plan);
               setselectedPlanId(
-                subscriptionData.plan != undefined ? subscriptionData.plan : ""
+                subscriptionData != '' ?  "" : subscriptionData.plan
               );
               console.log("in 200");
             }
@@ -81,6 +81,8 @@ function SubscriptionComponent(subscriptionData) {
         <div className="account-credit-card-root-inner">
           {planData &&
             planData.map((plans) => {
+              console.log(selectedPlanId,'-----', plans.id);
+              // console.log(plans.id);
               return (
                 <div
                   key={plans.id}

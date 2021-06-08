@@ -76,21 +76,21 @@ function RegistrationComponent() {
   const validateForm = (e) => {
     e.preventDefault();
     let isValid = true;
-    if (fullname === "") {
+    if (fullname.trim() === "") {
       setFormError({
         fullnameError: "This Field is required",
       });
       return (isValid = false);
     }
 
-    if (email === "") {
+    if (email.trim() === "") {
       setFormError({
         emailError: "This Field is required",
       });
       return (isValid = false);
     }
 
-    if (password === "") {
+    if (password.trim() === "") {
       setFormError({
         passwordError: "This Field is required",
       });
