@@ -1,12 +1,29 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams, useHistory } from "react-router-dom";
 import { isAuthenticated } from "../../services/auth";
+import InputComponent from "../../UI/InputComponent/InputComponent";
+import EmailRegx from "../../PatternCheck/EmailRegx";
 import { getUrl } from "../../Urls/urls";
 import { get, post } from "../../Urls/requests";
 
 function BookInfluencerRight() {
   const token = localStorage.getItem("token");
   const history = useHistory();
+  const initialState = {
+    fullname: "",
+    email: "",
+    password: "",
+  };
+  const initalError = {
+    fullnameError: "",
+    emailError: "",
+    passwordError: "",
+  };
+  const [stayLoginCheck, setStayLoginCheck] = useState(false);
+  const [formData, setFormData] = useState(initialState);
+  const [formError, setFormError] = useState(initalError);
+  const { fullname, email, password } = formData;
+  const { fullnameError, emailError, passwrordError } = formError;
   const staticData = {
     titles: [
       {
@@ -35,7 +52,7 @@ function BookInfluencerRight() {
           case 200:
             if (status === "OK") {
               seticonData(data);
-              console.log(data);
+              // console.log(data);
               console.log("in 200 scuuess");
             }
             break;
@@ -72,7 +89,7 @@ function BookInfluencerRight() {
               // seticonData(data);
               // console.log(data);
               console.log("in 200 scuuess");
-              history.push('/browse/')
+              history.push("/browse/");
             }
             break;
           case 400:
@@ -83,6 +100,107 @@ function BookInfluencerRight() {
         }
       })
       .catch((error) => {
+        console.log("in catch");
+      });
+  };
+
+  const validateForm = (e) => {
+    e.preventDefault();
+    let isValid = true;
+    if (fullname.trim() === "") {
+      setFormError({
+        fullnameError: "This Field is required",
+      });
+      return (isValid = false);
+    }
+
+    if (email.trim() === "") {
+      setFormError({
+        emailError: "This Field is required",
+      });
+      return (isValid = false);
+    }
+
+    if (password.trim() === "") {
+      setFormError({
+        passwordError: "This Field is required",
+      });
+      return (isValid = false);
+    }
+    if (!EmailRegx.test(email)) {
+      setFormError({
+        emailError: "Invalid Email",
+      });
+      return (isValid = false);
+    }
+    // if (!passwdRegex.test(password)) {
+    //   setFormError({
+    //     passwordError:
+    //       "Please use a Capital letter, a small letter and a number in your password.",
+    //   });
+    //   return (isValid = false);
+    // }
+
+    return isValid;
+  };
+
+  const create_account = (e) => {
+    let isFormValid = validateForm(e);
+    if (isFormValid) {
+      setFormError("");
+      const registerData = JSON.stringify({
+        name: fullname,
+        email: email,
+        password: password,
+      });
+      const url = getUrl("create_account");
+      // console.log(url);
+      signUpAPICall(url, registerData);
+      console.log("Your account has been createdz");
+    } else {
+      console.log("sorry please try agin");
+    }
+  };
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+    setFormError({
+      fullnameError: "",
+      emailError: "",
+      passwordError: "",
+    });
+  };
+
+  const signUpAPICall = (url, registerData) => {
+    post(`${url}`, registerData)
+      .then((response) => {
+        const {
+          data: { code, status, message },
+        } = response;
+        switch (code) {
+          case 201:
+            if (status === "OK") {
+              localStorage.setItem("staylogin", stayLoginCheck);
+              localStorage.setItem("fullname", fullname);
+              localStorage.setItem("email", email);
+              localStorage.setItem("password", password);
+              history.push(`/login`);
+            }
+            break;
+          case 400:
+            console.log(" in 400");
+            break;
+          case 200:
+            console.log(message);
+            break;
+          default:
+            console.log("in default");
+        }
+      })
+      .catch(() => {
         console.log("in catch");
       });
   };
@@ -139,31 +257,62 @@ function BookInfluencerRight() {
                                     <div className="row">
                                       <div className="col-lg-12 col-md-12">
                                         <div className="form-group">
-                                          <input
-                                            type="text"
-                                            className="form-control"
-                                            placeholder="FULL NAME"
+                                          <InputComponent
+                                            inputType="text"
+                                            inputPlaceholder="FULL NAME"
+                                            inputClassName="form-control"
+                                            inputName="fullname"
+                                            inpValue={formData.value}
+                                            onInputChange={handleChange}
                                           />
+                                          {formError.fullnameError ? (
+                                            <span style={{ color: "red" }}>
+                                              {formError.fullnameError}
+                                            </span>
+                                          ) : (
+                                            ""
+                                          )}
                                         </div>
                                       </div>
 
                                       <div className="col-lg-12 col-md-12">
                                         <div className="form-group">
-                                          <input
-                                            type="email"
-                                            className="form-control"
-                                            placeholder="EMAIL ADDRESS"
+                                          <InputComponent
+                                            inputType="email"
+                                            inputPlaceholder="EMAIL ADDRESS"
+                                            inputClassName="form-control"
+                                            inputName="email"
+                                            inpValue={formData.value}
+                                            onInputChange={handleChange}
                                           />
+                                          {formError.emailError ? (
+                                            <span style={{ color: "red" }}>
+                                              {formError.emailError}
+                                            </span>
+                                          ) : (
+                                            ""
+                                          )}
                                         </div>
                                       </div>
 
                                       <div className="col-lg-12 col-md-12">
                                         <div className="form-group">
-                                          <input
-                                            type="password"
-                                            className="form-control"
-                                            placeholder="PASSWORD"
+                                          <InputComponent
+                                            inputType="password"
+                                            inputPlaceholder="PASSWORD"
+                                            inputClassName="form-control"
+                                            inputName="password"
+                                            inpValue={formData.value}
+                                            onInputChange={handleChange}
                                           />
+
+                                          {formError.passwordError ? (
+                                            <span style={{ color: "red" }}>
+                                              {formError.passwordError}
+                                            </span>
+                                          ) : (
+                                            ""
+                                          )}
                                         </div>
                                       </div>
 
@@ -171,7 +320,8 @@ function BookInfluencerRight() {
                                         <div className="btn-group-div">
                                           <a
                                             href="#"
-                                            className="btn btn-common-primary btn-common-primary-big"
+                                            className="btn btn-common-primary btn-common-primary-big btn-create-account"
+                                            onClick={create_account}
                                           >
                                             CREATE ACCOUNT
                                           </a>
