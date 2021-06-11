@@ -208,15 +208,9 @@ function BrowseMainComponent() {
                               );
                             })
                           ) : (
-                            <div className="col-lg-6 col-md-6 general-grid-6 plr-20">
-                              <div className="general-card-box">
-                                <div className="general-card-inner-box">
-                                  <div className="top-image-thumb-div">
-                                    <div className="top-button-div">
-                                      No Events Found
-                                    </div>
-                                  </div>
-                                </div>
+                            <div class="heading-div ">
+                              <div class="heading-inner-div">
+                                <h3 class="no-events">No Events</h3>
                               </div>
                             </div>
                           )}

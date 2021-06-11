@@ -36,6 +36,8 @@ export const getUrl = (type) => {
       return `${baseUrl}/api/v1/event/details`;
     case "book-event-credit":
       return `${baseUrl}/api/v1/book-event-credit/`;
+    case "book-event":
+      return `${baseUrl}/api/v1/book-event/`;
     default:
       return baseUrl;
   }

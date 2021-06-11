@@ -14,6 +14,7 @@ import Browse from "./pages/Browse";
 import IndexPage from "./pages/IndexPage";
 import Influencer from "./pages/Influencer";
 import LoginPage from "./pages/LoginPage";
+import BookInfluencerDirectPurchase from "./components/BookInfluencer/BookInfluencerDirectPurchase";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route exact path={"/browse"} component={Browse} />
         <Route exact path={"/influencer/:id"} component={Influencer} />
         <Route exact path={"/book-influencer/:id"} component={BookInfluncer} />
+        <Route exact path={"/book-influencer-direct/:id"} component={BookInfluencerDirectPurchase} />
       </Router>
     </Provider>
   );

@@ -39,11 +39,8 @@ function RegistrationComponent() {
         console.log(response);
         switch (code) {
           case 201:
-            if (status === true) {
-              toast.success(message, {
-                pauseOnHover: false,
-                position: toast.POSITION.TOP_RIGHT,
-              });
+            if (status === 'OK') {
+              console.log("in 201");
               localStorage.setItem("staylogin", stayLoginCheck);
               localStorage.setItem("fullname", fullname);
               localStorage.setItem("email", email);
@@ -53,23 +50,14 @@ function RegistrationComponent() {
             }
             break;
           case 400:
-            toast.error(message, {
-              pauseOnHover: false,
-              position: toast.POSITION.TOP_RIGHT,
-            });
+            console.log("in 400");
             break;
           default:
-            toast.error(message, {
-              pauseOnHover: false,
-              position: toast.POSITION.TOP_RIGHT,
-            });
+            console.log("in default");
         }
       })
       .catch(() => {
-        toast.error("Something went wrong", {
-          pauseOnHover: false,
-          position: toast.POSITION.TOP_RIGHT,
-        });
+        console.log("in catch");
       });
   };
 

@@ -198,28 +198,9 @@ function ExploreLiveEventComponent() {
                                   );
                                 })
                               ) : (
-                                <div className="tabs-body">
-                                  <div className="tab-content">
-                                    <div
-                                      id="category-live-event-tab"
-                                      className="tab-pane active show"
-                                    >
-                                      <div className="tab-pane-inner">
-                                        <div className="general-card-root">
-                                          <div className="row mlr-20">
-                                            <div className="col-lg-12 col-md-12 general-grid-12 plr-20">
-                                              <div className="general-card-box">
-                                                <div className="general-card-inner-box">
-                                                  <div className="content-div">
-                                                    No events Found
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
+                                <div class="heading-div ">
+                                  <div class="heading-inner-div">
+                                    <h3 class="no-events">No Events</h3>
                                   </div>
                                 </div>
                               )}

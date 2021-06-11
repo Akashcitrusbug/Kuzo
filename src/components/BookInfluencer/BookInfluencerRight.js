@@ -204,6 +204,7 @@ function BookInfluencerRight() {
         console.log("in catch");
       });
   };
+  var direct_purchase_url = "/book-influencer-direct/" + params.id + "/"
   return (
     <>
       <div className="col-lg-6 col-md-6 book-influencer-right-side">
@@ -386,8 +387,8 @@ function BookInfluencerRight() {
                                       <div className="book-tab-common-root">
                                         <div className="book-buttons-root">
                                           <div className="button-div">
-                                            <a
-                                              href="book-influencer-book-tab-direct-purchase.html"
+                                            <Link
+                                              to={direct_purchase_url}
                                               className="btn btn-black-arrow-full"
                                             >
                                               PURCHASE FOR $ {iconData.price}{" "}
@@ -395,7 +396,7 @@ function BookInfluencerRight() {
                                                 {" "}
                                                 <i className="bg-custom-icon arrow-right-side-icon"></i>{" "}
                                               </span>{" "}
-                                            </a>
+                                            </Link>
                                           </div>
                                           <div className="button-div">
                                             <Link
